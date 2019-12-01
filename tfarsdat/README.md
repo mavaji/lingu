@@ -1,0 +1,1 @@
+For the original paper (written in Persian), see: [Comparison of Phonetic Structure of Formal and Colloquial Persian](https://mavaji.github.io/2012/12/05/pazand.html)
