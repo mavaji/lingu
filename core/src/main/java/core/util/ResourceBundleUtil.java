@@ -3,11 +3,7 @@ package core.util;
 import java.util.ResourceBundle;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 12/8/10
- * Time: 10:44 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class ResourceBundleUtil {
     public static String getResource(String key) {

@@ -5,11 +5,7 @@ import tfarsdat.service.Distance;
 import java.sql.*;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 4/28/11
- * Time: 3:01 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class App {
     class unit {

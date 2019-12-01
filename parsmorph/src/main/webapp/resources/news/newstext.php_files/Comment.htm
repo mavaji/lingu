@@ -14,9 +14,10 @@
   ~    limitations under the License.
   -->
 
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
-<script language="JavaScript">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+    <script language="JavaScript">
 function form_js() {
 if (document.cmnt.Comment.value == 'محل درج نظر:') {
 document.cmnt.Comment.value = '' ;
@@ -24,40 +25,68 @@ document.cmnt.Comment.style.color = 'black' ;
 }
 
 }
-</script>
+
+    </script>
 </head>
 <body topmargin="0" leftmargin="0" dir="rtl" bgcolor="#F4F3F5">
 
 
 <form action="send.php" dir="rtl" method="POST" name="cmnt" id="cmnt">
 
-<table style="margin-top: 0pt; margin-left: 0pt; margin-right: 0pt;" dir="rtl" cellpadding="0" cellspacing="0" width="100%">
-<tbody><tr>
-<td dir="rtl" bgcolor="#CCCCCC" height="20" nowrap="nowrap" width="100%">
-<p class="LCTitle" style="font-family:tahoma; font-size:13px">&nbsp;نظر شما درباره اين خبر:</p>
-</td>
-</tr>
-</tbody></table>
+    <table style="margin-top: 0pt; margin-left: 0pt; margin-right: 0pt;" dir="rtl" cellpadding="0" cellspacing="0"
+           width="100%">
+        <tbody>
+        <tr>
+            <td dir="rtl" bgcolor="#CCCCCC" height="20" nowrap="nowrap" width="100%">
+                <p class="LCTitle" style="font-family:tahoma; font-size:13px">&nbsp;نظر شما درباره اين خبر:</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
 
-<table><tbody><tr><td>
-<table style="font-family: tahoma; font-size: 12px;">
-<tbody><tr><td valign="top">
-نام:
-</td><td align="right">
-<input size="22" dir="rtl" name="Name" type="text"><p></p>
-</td></tr><tr><td valign="top">
-پست الکترونيک:
-</td><td align="right">
-<input size="22" dir="ltr" name="Email" type="text"><p></p>
-</td>
-</tr></tbody></table>
-</td><td align="right" valign="top">
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <table style="font-family: tahoma; font-size: 12px;">
+                    <tbody>
+                    <tr>
+                        <td valign="top">
+                            نام:
+                        </td>
+                        <td align="right">
+                            <input size="22" dir="rtl" name="Name" type="text">
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            پست الکترونيک:
+                        </td>
+                        <td align="right">
+                            <input size="22" dir="ltr" name="Email" type="text">
+                            <p></p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td align="right" valign="top">
 
-<p class="commentObj" align="center">
-<textarea onfocus="form_js()" rows="5" cols="37" name="Comment" style="font-family: tahoma; color: rgb(181, 185, 234); font-size: 12px;" dir="rtl" tabindex="3" align="center">محل درج نظر:</textarea>
-</p></td><td align="right" valign="bottom">
-<input name="nn" value="9005030746" type="hidden">
-<input class="commentObj" value="ارسال" dir="ltr" style="font-family: tahoma; font-size: 12px; float: left;" align="left" type="submit">
-</td></tr></tbody></table>
-</form></body></html>
+                <p class="commentObj" align="center">
+                    <textarea onfocus="form_js()" rows="5" cols="37" name="Comment"
+                              style="font-family: tahoma; color: rgb(181, 185, 234); font-size: 12px;" dir="rtl"
+                              tabindex="3" align="center">محل درج نظر:</textarea>
+                </p></td>
+            <td align="right" valign="bottom">
+                <input name="nn" value="9005030746" type="hidden">
+                <input class="commentObj" value="ارسال" dir="ltr"
+                       style="font-family: tahoma; font-size: 12px; float: left;" align="left" type="submit">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

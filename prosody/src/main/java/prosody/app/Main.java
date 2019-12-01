@@ -9,11 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 5/18/12
- * Time: 7:52 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class Main extends JFrame {
     private JButton writtenButton;
@@ -44,9 +40,9 @@ public class Main extends JFrame {
         writtenButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String s = writtenField.getText();
-                PhonemeHolder[] phonemeHolders= prosodyAnalyzer.getProsody(s, false);
+                PhonemeHolder[] phonemeHolders = prosodyAnalyzer.getProsody(s, false);
                 String result = "";
-                for (PhonemeHolder phonemeHolder: phonemeHolders) {
+                for (PhonemeHolder phonemeHolder : phonemeHolders) {
                     result += "\n" + phonemeHolder.getPhonologicalForm() + "\n";
                     result += phonemeHolder.getRhythm().getSymbol() + "\n";
                     result += phonemeHolder.getRhythm().getRhythm() + "\n";
@@ -74,9 +70,9 @@ public class Main extends JFrame {
                 s = s.replaceAll("j", "ǰ");
                 s = s.replaceAll("C", "č");
                 s = s.replaceAll("Z", "ž");
-                PhonemeHolder[] phonemeHolders= prosodyAnalyzer.getProsody(s, true);
+                PhonemeHolder[] phonemeHolders = prosodyAnalyzer.getProsody(s, true);
                 String result = s;
-                for (PhonemeHolder phonemeHolder: phonemeHolders) {
+                for (PhonemeHolder phonemeHolder : phonemeHolders) {
                     result += "\n" + phonemeHolder.getRhythm().getSymbol() + "\n";
                     result += phonemeHolder.getRhythm().getRhythm() + "\n";
                     result += phonemeHolder.getRhythm().getName() + "\n";

@@ -16,14 +16,14 @@
 
 package parsmorph.web;
 
-import parsmorph.model.Comment;
-import parsmorph.model.Query;
+import core.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import parsmorph.model.Comment;
+import parsmorph.model.Query;
 import parsmorph.service.MorphologicalAnalyser;
 import parsmorph.service.PhonemeAnalyzer;
 import parsmorph.service.Possibility;
-import core.util.HibernateUtil;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -183,8 +183,8 @@ public class ControllerBean {
 
     private void savePhonology(HttpServletRequest request, String phonemeQuery, String[] phonemeResults) {
         String result = "";
-        for(String s:phonemeResults){
-            result+=s+"\n";
+        for (String s : phonemeResults) {
+            result += s + "\n";
         }
 
         Query query = new Query(phonemeQuery, request.getRemoteAddr(), result, true);

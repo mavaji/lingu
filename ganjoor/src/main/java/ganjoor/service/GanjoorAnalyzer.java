@@ -9,11 +9,7 @@ import parsmorph.service.Possibility;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 4/18/11
- * Time: 6:48 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class GanjoorAnalyzer {
     private CategoryDao categoryDao;

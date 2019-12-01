@@ -1,6 +1,5 @@
 package ganjoor.app;
 
-
 import ganjoor.dao.CategoryDao;
 import ganjoor.dao.PoemDao;
 import ganjoor.dao.PoetDao;
@@ -21,11 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 12/8/10
- * Time: 8:10 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class App {
 

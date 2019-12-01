@@ -16,13 +16,11 @@
 
 package parsmorph.service;
 
-import parsmorph.model.Affix;
-import parsmorph.model.Entry;
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import core.util.MyTreeNode;
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
-import core.util.MyTreeNode;
+import parsmorph.model.Affix;
+import parsmorph.model.Entry;
 
 import java.util.List;
 import java.util.ResourceBundle;
@@ -333,13 +331,5 @@ public class Possibility {
         }
 
         return result;
-    }
-
-    public String toString() {
-        try {
-            return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE, false, this.getClass());
-        } catch (Exception e) {
-            return super.toString();
-        }
     }
 }

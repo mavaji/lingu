@@ -1,8 +1,5 @@
 package core.model;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,14 +21,6 @@ public abstract class BaseEntity implements Serializable, Cloneable, Comparable 
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String toString() {
-        try {
-            return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE, false, this.getClass());
-        } catch (Exception e) {
-            return this.getClass().getName() + "_" + getId();
-        }
     }
 
     public boolean equals(Object other) {

@@ -1,6 +1,5 @@
 package ganjoor.model;
 
-
 import core.model.BaseEntity;
 
 import javax.persistence.*;
@@ -8,11 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 4/18/11
- * Time: 5:12 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 @Entity
 @Table(name = "GJ_POET")

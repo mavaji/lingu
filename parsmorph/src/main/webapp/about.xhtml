@@ -19,7 +19,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui">
 <body>
@@ -27,7 +26,10 @@
 
     <h:form>
         <h:panelGrid columns="2" cellpadding="10">
-            <b>Pars Morph</b> is a rule-based Persian morphological analysis system, which analyzes the internal structure of word in Persian and determines the grammatical category and function of the word parts. Being in link with a lexicon covering about 45000 lexemes and based on morpho-logical rules in Persian, it can analyze the structure of complex lexemes and their possible inflected forms and even out-of-lexicon words.
+            <b>Pars Morph</b> is a rule-based Persian morphological analysis system, which analyzes the internal
+            structure of word in Persian and determines the grammatical category and function of the word parts. Being
+            in link with a lexicon covering about 45000 lexemes and based on morpho-logical rules in Persian, it can
+            analyze the structure of complex lexemes and their possible inflected forms and even out-of-lexicon words.
         </h:panelGrid>
 
         <p:tabView value="#{authorBean.authors}" var="author">

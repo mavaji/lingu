@@ -3,11 +3,7 @@ package prosody.service;
 import prosody.model.Rhythm;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 5/18/12
- * Time: 8:20 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class PhonemeHolder {
     private String phonologicalForm;

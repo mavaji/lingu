@@ -9,11 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
- * User: vahid
- * Date: 7/22/12
- * Time: 6:15 AM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public abstract class BaseDao implements Serializable {
     public List findByNamedQuery(String namedQuery) {

@@ -12,12 +12,4 @@
 
     <artifactId>tfarsdat</artifactId>
     <version>1</version>
-
-    <dependencies>
-        <dependency>
-            <groupId>lingu</groupId>
-            <artifactId>core</artifactId>
-            <version>1</version>
-        </dependency>
-    </dependencies>
 </project>

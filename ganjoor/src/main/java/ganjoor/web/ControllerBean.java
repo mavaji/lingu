@@ -11,11 +11,7 @@ import javax.faces.bean.RequestScoped;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 12/10/10
- * Time: 1:53 AM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 @ManagedBean(name = "controllerBean")
 @RequestScoped

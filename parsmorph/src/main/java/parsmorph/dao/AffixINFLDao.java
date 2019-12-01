@@ -17,9 +17,9 @@
 package parsmorph.dao;
 
 import core.dao.BaseDao;
+import org.apache.commons.lang.ArrayUtils;
 import parsmorph.model.Affix;
 import parsmorph.model.AffixINFL;
-import org.apache.commons.lang.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.List;

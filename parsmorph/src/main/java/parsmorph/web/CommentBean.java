@@ -16,10 +16,10 @@
 
 package parsmorph.web;
 
-import parsmorph.model.Comment;
+import core.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import core.util.HibernateUtil;
+import parsmorph.model.Comment;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;

@@ -17,11 +17,6 @@
     <dependencies>
         <dependency>
             <groupId>lingu</groupId>
-            <artifactId>core</artifactId>
-            <version>1</version>
-        </dependency>
-        <dependency>
-            <groupId>lingu</groupId>
             <artifactId>parsmorph</artifactId>
             <version>1</version>
             <type>jar</type>
@@ -57,7 +52,6 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
     </build>

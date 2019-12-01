@@ -16,20 +16,9 @@
     <dependencies>
         <dependency>
             <groupId>lingu</groupId>
-            <artifactId>core</artifactId>
-            <version>1</version>
-        </dependency>
-        <dependency>
-            <groupId>lingu</groupId>
             <artifactId>parsmorph</artifactId>
             <version>1</version>
             <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>lingu</groupId>
-            <artifactId>parsmorph</artifactId>
-            <version>1</version>
-            <type>war</type>
         </dependency>
     </dependencies>
 </project>

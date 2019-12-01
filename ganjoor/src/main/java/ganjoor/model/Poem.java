@@ -1,20 +1,15 @@
 package ganjoor.model;
 
-
 import core.model.BaseEntity;
 
 import javax.persistence.*;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 4/18/11
- * Time: 5:12 PM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 @Entity
 @Table(name = "GJ_POEM")
-@NamedQueries({@NamedQuery(name =Poem.FIND_BY_POET_ID, query = "from Poem p where p.category.poet.id=:poetId")})
+@NamedQueries({@NamedQuery(name = Poem.FIND_BY_POET_ID, query = "from Poem p where p.category.poet.id=:poetId")})
 public class Poem extends BaseEntity {
     public static final String FIND_BY_POET_ID = "FIND_BY_POET_ID";
 

@@ -19,8 +19,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui">
 <body>
 <ui:composition>
@@ -28,8 +26,16 @@
 
         <b>INTRODUCTION</b>
         <br/>
-        In this study we investigate the theoretical base of Persian morphology system and design a Persian morphological analyzer named “Pars Morph”.  Pars Morph is a system based on the morphological rules of Persian language. It analyzes and parses the internal structure of Persian words regarding the inflection and word formation system of the language. It also determines the part of speech and the grammatical role of each compromising component. Pars morph uses a lexicon containing about 45000 words and is strictly defined in the framework of Persian morphological rules and a comprehensive linguistic research background. It can analyze complex words, inflectional forms and even out-of-vocabulary words.
-        The accuracy of the first version of the software is about 95% which can be improved to near 100% by adding syntactic information and considering the problem of homographs and special features of the Persian language. It can also be used in pure linguistic research and automatic processing of Persian language.
+        In this study we investigate the theoretical base of Persian morphology system and design a Persian
+        morphological analyzer named “Pars Morph”. Pars Morph is a system based on the morphological rules of Persian
+        language. It analyzes and parses the internal structure of Persian words regarding the inflection and word
+        formation system of the language. It also determines the part of speech and the grammatical role of each
+        compromising component. Pars morph uses a lexicon containing about 45000 words and is strictly defined in the
+        framework of Persian morphological rules and a comprehensive linguistic research background. It can analyze
+        complex words, inflectional forms and even out-of-vocabulary words.
+        The accuracy of the first version of the software is about 95% which can be improved to near 100% by adding
+        syntactic information and considering the problem of homographs and special features of the Persian language. It
+        can also be used in pure linguistic research and automatic processing of Persian language.
         <p:separator/>
         <b>PERSIAN INFLECTION SYSTEM</b>
         <br/>
@@ -39,37 +45,58 @@
         <br/>
         <b>Figure 1: The inflection system of Persian nouns</b>
         <br/>
-        As we can see in the above diagram, nouns can accept inflectional components in three positions that are strictly ordered and any change in this order can result in ill-formed words. In every position, different forms of the morphemes (for example plural morphemes in the first position) are in complementary distribution of which presence of one morpheme blocks other forms or other classes in that position. An example of software output for the word “دانشجویانشان” (their students) is presented here:
+        As we can see in the above diagram, nouns can accept inflectional components in three positions that are
+        strictly ordered and any change in this order can result in ill-formed words. In every position, different forms
+        of the morphemes (for example plural morphemes in the first position) are in complementary distribution of which
+        presence of one morpheme blocks other forms or other classes in that position. An example of software output for
+        the word “دانشجویانشان” (their students) is presented here:
         <br/>
         <p:graphicImage value="/images/fig2.jpg"/>
         <br/>
         <b>Figure 2: Sample output of the software for nouns</b>
         <br/>
-        As demonstrated in figure 2, the inflectional structure of the word is broken up into the stem and affixes as well as the syntactic role of each component.  Then, if the stem is not simplex, its derivational form is analyzed, along with the syntactic roles of each component. The phonological form of the words is also presented.
+        As demonstrated in figure 2, the inflectional structure of the word is broken up into the stem and affixes as
+        well as the syntactic role of each component. Then, if the stem is not simplex, its derivational form is
+        analyzed, along with the syntactic roles of each component. The phonological form of the words is also
+        presented.
         As further examples, the inflectional system of Persian verbs is illustrated in figure 3:
         <br/>
         <p:graphicImage value="/images/fig3.jpg"/>
         <br/>
         <b>Figure 3: The inflection system of Persian verbs</b>
         <p:separator/>
-        <b>PERSIAN WORD FORMATION   SYSTEM</b>
+        <b>PERSIAN WORD FORMATION SYSTEM</b>
         <br/>
-        The word formation system of Persian language is formalized in the design of Pars Morph. Two main forms of word formation in Persian language are derivation and compounding. Pars Morph refers to Flexicon and analyzes derived/compound words using the derivation and compounding capabilities.
+        The word formation system of Persian language is formalized in the design of Pars Morph. Two main forms of word
+        formation in Persian language are derivation and compounding. Pars Morph refers to Flexicon and analyzes
+        derived/compound words using the derivation and compounding capabilities.
         <p:separator/>
         <b>Derivation</b>
-        We provided Pars Morph with a list of derivational affixes and patterns of derivations in Persian language. In the patterns of derivations, it is specified which derivational affixes are added to which specific stems regarding their syntactic category; and the syntactic category of the resulting word will be identified. For example the word “دانشگاهی” is broken up into “دان”  (v1)+ “ش” (N=اسم‌ساز)+ “گاه” (N=اسم‌ساز) + “ی” (A=صفت‌ساز).
-        Using this information, Pars Morph can analyze out-of-vocabulary words and even can suggest potential analyses for the corresponding words.
+        We provided Pars Morph with a list of derivational affixes and patterns of derivations in Persian language. In
+        the patterns of derivations, it is specified which derivational affixes are added to which specific stems
+        regarding their syntactic category; and the syntactic category of the resulting word will be identified. For
+        example the word “دانشگاهی” is broken up into “دان” (v1)+ “ش” (N=اسم‌ساز)+ “گاه” (N=اسم‌ساز) + “ی” (A=صفت‌ساز).
+        Using this information, Pars Morph can analyze out-of-vocabulary words and even can suggest potential analyses
+        for the corresponding words.
         <p:separator/>
         <b>Compounding</b>
         <br/>
-        Simple lexemes can be combined together and form compound lexemes. Often the components of a compound lexeme are themselves lexical entries in software’s lexicon. In this case the syntactic categories of combining components and the compound lexeme are given. Out-of-vocabulary compound words can also be analyzed using the main lexicon of the software and considering the combining patterns. For example the output of the program for the word “آهنخوار” (which is obviously not a lexical word) is as follows:
+        Simple lexemes can be combined together and form compound lexemes. Often the components of a compound lexeme are
+        themselves lexical entries in software’s lexicon. In this case the syntactic categories of combining components
+        and the compound lexeme are given. Out-of-vocabulary compound words can also be analyzed using the main lexicon
+        of the software and considering the combining patterns. For example the output of the program for the word
+        “آهنخوار” (which is obviously not a lexical word) is as follows:
         <br/>
         <p:graphicImage value="/images/fig4.jpg"/>
         <br/>
         <b>Figure 4: Sample output of the software for compounding</b>
         <br/>
-        It is worth mentioning that the software is not relied on spaces, i.e. if we write “آهنخوار” as “آهن خوار” with any combinations of spaces, the result is the same.
-        In the case of compound-complex words, Pars Morph considers the rules of derivation and compounding simultaneously and breaks up the word into its constituents in which the syntactic category of each component is specified. For example words like “کارخانه‌چی” or “دانشجو” are analyzed as: “کار” (N1)+ “خانه” (N1)+ “چی” (N=تکواژ اشتقاقی اسم‌ساز), “دان” (V1)+ “ش” (N=تکواژ اشتقاقی اسم‌ساز) + “جو” (V1), respectively.
+        It is worth mentioning that the software is not relied on spaces, i.e. if we write “آهنخوار” as “آهن خوار” with
+        any combinations of spaces, the result is the same.
+        In the case of compound-complex words, Pars Morph considers the rules of derivation and compounding
+        simultaneously and breaks up the word into its constituents in which the syntactic category of each component is
+        specified. For example words like “کارخانه‌چی” or “دانشجو” are analyzed as: “کار” (N1)+ “خانه” (N1)+ “چی”
+        (N=تکواژ اشتقاقی اسم‌ساز), “دان” (V1)+ “ش” (N=تکواژ اشتقاقی اسم‌ساز) + “جو” (V1), respectively.
         <br/>
         <p:graphicImage value="/images/fig5.jpg"/>
         <br/>
@@ -77,7 +104,10 @@
         <p:separator/>
         <b>CONCLUSION</b>
         <br/>
-        In the current study, we have introduced a morphological analysis system for Persian language. In the process of designing and implementing this system, we formalized exactly the inflection, derivation and word formation processes of Persian language. Pars Morph can help researchers working on pure linguistics, machine translation, information extraction, text summarization, text to speech systems, and etc.
+        In the current study, we have introduced a morphological analysis system for Persian language. In the process of
+        designing and implementing this system, we formalized exactly the inflection, derivation and word formation
+        processes of Persian language. Pars Morph can help researchers working on pure linguistics, machine translation,
+        information extraction, text summarization, text to speech systems, and etc.
         An online demo can be found at: http://81.31.191.11
 
     </p:panel>

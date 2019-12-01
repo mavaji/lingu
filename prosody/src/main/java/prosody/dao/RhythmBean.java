@@ -1,8 +1,8 @@
 package prosody.dao;
 
+import core.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import core.util.HibernateUtil;
 import prosody.model.Rhythm;
 
 import java.io.Serializable;

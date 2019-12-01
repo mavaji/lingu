@@ -16,6 +16,7 @@
 
 package parsmorph.service;
 
+import org.apache.commons.lang.ArrayUtils;
 import parsmorph.dao.AffixAUXDao;
 import parsmorph.dao.AffixDRVDao;
 import parsmorph.dao.AffixINFLDao;
@@ -24,7 +25,6 @@ import parsmorph.model.Affix;
 import parsmorph.model.AffixType;
 import parsmorph.model.Entry;
 import parsmorph.model.SyntacticCategory;
-import org.apache.commons.lang.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

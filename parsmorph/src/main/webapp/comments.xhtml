@@ -29,15 +29,14 @@
         <p:fieldset legend="Comment" toggleable="true" toggleSpeed="500" collapsed="true">
             <p:growl id="messages" showDetail="true"/>
             <h:outputLabel for="name" value="Name (optional)"/>
-            <p:inputText id="name" name="name" value="#{controllerBean.name}" size="30" />
+            <p:inputText id="name" name="name" value="#{controllerBean.name}" size="30"/>
             <h:outputLabel for="email" value="Email (optional)"/>
-            <p:inputText id="email" name="email" value="#{controllerBean.email}" size="30" />
+            <p:inputText id="email" name="email" value="#{controllerBean.email}" size="30"/>
             <h:outputLabel for="comment" value="Your Comments *"/>
-            <p:inputTextarea id="comment" value="#{controllerBean.comment}" rows="5" cols="5" style="resize: none;" required="true"/>
+            <p:inputTextarea id="comment" value="#{controllerBean.comment}" rows="5" cols="5" style="resize: none;"
+                             required="true"/>
 
-            <p:captcha label="Srcurity Check" theme="white"/>
-            <p:commandButton value="Comment" action="#{controllerBean.handleComments}" update=":form:messages" ajax="false"
-                             actionListener="#{captchaBean.submit}"/>
+            <p:commandButton value="Comment" action="#{controllerBean.handleComments}"/>
         </p:fieldset>
     </h:form>
 

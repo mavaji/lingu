@@ -1,11 +1,7 @@
 package prosody.service;
 
 /**
- * Created by IntelliJ IDEA.
- * User: vahid
- * Date: 5/3/12
- * Time: 12:33 AM
- * To change this template use File | Settings | File Templates.
+ * @author Vahid Mavaji
  */
 public class Constants {
     public static final String FA_ELATON = "--u-";
