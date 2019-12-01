@@ -1,0 +1,106 @@
+/*
+ * Copyright 2012 Vahid Mavaji
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
+A:link { COLOR: #000000; TEXT-DECORATION: none }
+A:visited { COLOR: #000000; TEXT-DECORATION: none }
+A:active { COLOR: navy;TEXT-DECORATION: none }
+A:hover { COLOR: navy; TEXT-DECORATION:none }
+A.hdr:link { COLOR: white; TEXT-DECORATION: none }
+A.hdr:visited { COLOR: white; TEXT-DECORATION: none }
+A.hdr:active { COLOR: red;TEXT-DECORATION: none }
+A.hdr:hover { COLOR: red; TEXT-DECORATION:none }
+.TextNews1 { PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 2px; COLOR: #333; DIRECTION: rtl; LINE-HEIGHT: 140%; PADDING-TOP: 2px; FONT-FAMILY: tahoma;}
+.TextNews2 { PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 2px; COLOR: #333; LINE-HEIGHT: 140%; PADDING-TOP: 2px; FONT-FAMILY: tahoma;}
+.textView
+{
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-left:10px;
+	padding-Right:10px;
+	font-family:Tahoma , Times New Roman;
+	font-size:10pt;
+	text-align:justify;
+	LINE-HEIGHT: 140%; 
+	FONT-WEIGHT: bold;
+	color: Black;
+	text-justify:auto;
+}
+
+.backgdMenu 
+{
+	background-color: #E2E9ED;
+}
+
+.backgdLastNews 
+{
+	background-color: #E2E9ED;
+}
+
+.backgdSearchHdr
+{
+	background-color: #E2E9ED;
+}
+
+.hot3Line 
+{
+	color : #F94B45;
+	height : 1px;
+}
+
+.maghalatLine 
+{
+	color : #B0B0B0;
+	height : 2px;
+}
+
+.hotnewsSeparator 
+{
+	color : #F94B45;
+	height : 1px;
+}
+
+.lastnewsSeparator 
+{
+	color : white; 
+	height : 1px;
+	width: 70%;
+	text-align: center;
+}
+
+.hot3Title
+{
+	color: #043079;
+	font-family:Times New Roman;
+	font-size: 10pt;
+	text-align: center;
+	font-weight: bold;
+}
+	
+.btnPrintPage
+{
+	display:inline
+}
+
+.btnViewPage
+{
+	display:none
+}
+
+.tdover
+{
+	background-color: #DBF0FB; 
+	font-weight:normal
+}

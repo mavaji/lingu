@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="show_sql">false</property>
+		<property name="format_sql">true</property>
+		<property name="dialect">core.util.SQLiteDialect</property>
+		<property name="connection.driver_class">org.sqlite.JDBC</property>
+		<property name="connection.url">jdbc:sqlite:../ling_db.db</property>
+        <property name="hibernate.jdbc.batch_size">15</property>
+        <property name="connection.pool_size">10</property>
+		<property name="connection.username"></property>
+		<property name="connection.password"></property>
+
+		<mapping class="parsmorph.model.AffixAUX" />
+		<mapping class="parsmorph.model.AffixDRV" />
+		<mapping class="parsmorph.model.AffixINFL" />
+		<mapping class="parsmorph.model.AffixType" />
+		<mapping class="parsmorph.model.Comment" />
+		<mapping class="parsmorph.model.Entry" />
+		<mapping class="parsmorph.model.Query" />
+		<mapping class="parsmorph.model.SyntacticCategory" />
+	</session-factory>
+</hibernate-configuration>

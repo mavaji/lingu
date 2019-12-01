@@ -1,0 +1,185 @@
+/*
+ * Copyright 2012 Vahid Mavaji
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
+DIV#mhn-toolbar {
+	  FONT-SIZE: medium; 
+	  BACKGROUND: url(../images/toolbar_bg.gif) #054381 repeat-x right bottom;
+	  MARGIN-BOTTOM: 0px; 
+	  PADDING-BOTTOM: 0px; 
+	  MARGIN-LEFT: auto; 
+	  WIDTH: 974px; 
+	  BOTTOM: 0px; 
+	  MARGIN-RIGHT: auto; 
+	  PADDING-TOP: 6px; 
+	  FONT-FAMILY: Tahoma (Arabic),Times New Roman; 
+	  HEIGHT: 21px;
+	  VERTICAL-ALIGN: bottom;
+	  font-family:Times New Roman;
+	  font-size:14px;
+	 
+	  color:#E0F6F8;/*#F4F4DD;*/
+	  text-align:right;
+	 
+}
+DIV#mhn-toolbar span{padding-right:10px}
+#mhn-tabs {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	LEFT: 0px; 
+	FLOAT: left; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 2px 0px 0px; 
+	WIDTH: 445px; 
+	DIRECTION: ltr; 
+	BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	POSITION: relative; 
+	HEIGHT: 19px; 
+	BACKGROUND-COLOR: #054381;
+	vertical-align:bottom;
+}
+
+DIV#mhn-tabs DIV 
+{
+	
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	POSITION: absolute; 
+	HEIGHT: 18px
+}
+DIV#mhn-tabs DIV A {
+	BACKGROUND-POSITION: left top;
+	PADDING-LEFT: 0px;
+	FLOAT: left;
+	BACKGROUND-IMAGE: url(../images/tab01.gif);
+	PADDING-BOTTOM: 0px;
+	MARGIN-LEFT: 0px;
+	BOTTOM: 0px;
+	BACKGROUND-REPEAT: no-repeat;
+	WIDTH: 64px; 
+	HEIGHT: 18px
+}
+DIV#mhn-tabs DIV A:hover {
+	BACKGROUND-IMAGE: url(../images/tab01.gif);
+	background-position:0 -18;
+}
+DIV#mhn-tabs DIV A IMG {
+	BORDER-RIGHT: medium none; 
+	BORDER-TOP: medium none; 
+	MARGIN-TOP: 4px; 
+	FLOAT: left; 
+	BORDER-LEFT: medium none; 
+	BORDER-BOTTOM: medium none ;/* width:56; height:15;*/
+}
+DIV#mhn-tabs DIV#mhn-current {
+	MARGIN-TOP: 0px; 
+	PADDING-LEFT: 0px; 
+	MARGIN-LEFT: 0px; 
+	HEIGHT: 19px;
+}
+DIV#mhn-tabs DIV#mhn-current A {
+	PADDING-RIGHT: 0px; 
+	BACKGROUND-POSITION: left top; 
+	PADDING-LEFT: 0px; 
+	BACKGROUND-IMAGE: url(../images/tab02.GIF); 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px;  
+	BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	BORDER-BOTTOM: medium none; 
+	BACKGROUND-REPEAT: no-repeat;  
+	TEXT-ALIGN: center;
+	WIDTH: 74px;
+	HEIGHT: 19px;
+}
+.farsiTab {
+	Z-INDEX: 6; RIGHT: 2px; MARGIN-LEFT: 0px; TOP: 0px
+}
+.arabicTab {
+	Z-INDEX: 5; RIGHT: 74px; TOP: 0px
+}
+.UrduTab {
+	Z-INDEX: 4; RIGHT: 136px; TOP: 0px
+}
+.EnglishTab {
+	Z-INDEX: 3; RIGHT: 198px; TOP: 0px
+}
+.TurkeyTab {
+	Z-INDEX: 2; RIGHT: 260px; TOP: 0px
+}
+.DeutchTab {
+	Z-INDEX: 1; RIGHT: 322px; TOP: 0px
+}
+#mhn-frametable 
+{
+	
+	PADDING: 0px; 	
+	BACKGROUND: white; 	
+	BORDER-LEFT: #d4d0c8 1px solid; 
+	WIDTH: 974px; 
+	DIRECTION: rtl; 
+	
+}
+#mhn-banner-scondrow TD {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px
+}
+#mhn-allah {
+	MARGIN-BOTTOM: 1px; 
+	PADDING-BOTTOM: 0px ; 
+	margin-left:10px;
+}
+#mhn-datetime {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 12px; 
+	FLOAT: left; 
+	MARGIN-BOTTOM: 0px; 
+	PADDING-BOTTOM: 0px; 
+	COLOR: #003366; 
+	FONT-FAMILY: Times New Roman; 
+	BACKGROUND-COLOR: #94aad6
+}
+#mhn-mehrlogo {
+	/*BORDER-RIGHT: #d4d0c8 1px solid;*/ 
+	PADDING: 0px; 
+	BORDER-LEFT: medium none; 
+	WIDTH: 145px; 
+	PADDING-TOP: 0px
+}
+#mhn-mehr-banner {
+	BORDER-RIGHT: medium none;  
+	BORDER-LEFT: medium none; 
+	WIDTH: 570px; 
+	HEIGHT: 57px;
+}
+
+#mhn-left {
+	PADDING: 0px; 
+	MARGIN: 0px; 	
+	border-left:solid 1px white;
+}
+#mhn-banner-thirdrow {
+	/*BORDER-RIGHT: #d4d0c8 1px solid;*/ 
+	WIDTH: 100%; 
+	BORDER-BOTTOM: #d4d0c8; 
+	BACKGROUND-COLOR: #94aad6
+}

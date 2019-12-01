@@ -1,0 +1,1041 @@
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>ارائه نرم افزاری برای مطالعات زبان شناختی</title>
+		<meta name="RESOURCE-TYPE" content="DOCUMENT">
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<link href="newsdetail.aspx_files/Menu.css" type="Text/css" rel="STYLESHEET">
+		<link href="newsdetail.aspx_files/banner2.css" type="Text/css" rel="STYLESHEET">
+		<link href="newsdetail.aspx_files/style2.css" type="Text/css" rel="STYLESHEET">
+		<style>SPAN.searchword { BACKGROUND-COLOR: yellow }
+		</style>
+		<script language="JavaScript" src="newsdetail.aspx_files/searchhi.js" type="text/javascript"></script>
+		<script language="JavaScript">
+			function loadSearchHighlight()
+			{
+				
+				var searchStr = document.getElementById("Newsdetails2:hidInputBut");
+				if(searchStr!=null)
+				CustomSearchHighlight2(searchStr.value);
+			}
+   
+		</script>
+	</head>
+	<body ms_positioning="GridLayout" onload="SetTitle();startBlink();loadSearchHighlight();LoadUrgentNews();ticker();">
+		<div id="Container" align="center">
+			<form name="Form2" method="post" action="/FA/newsdetail.aspx?NewsID=1366599" id="Form2">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTc0NDc4NjYwOA9kFgJmD2QWBgIBD2QWBGYPZBYCAgEPZBYEZg9kFgJmDw8WAh4EVGV4dAX1ATxhIGlkPSJhQm9vayIgY2xhc3M9ImJvb2siaHJlZj0nbmV3c2RldGFpbC5hc3B4P05ld3NJRD0xMzQxNjU5JyB0YXJnZXQ9Il9ibGFuayI+PGltZyBpZD0iaW1nQm9vayIgd2lkdGg9IjEwMCJib3JkZXI9IjBweCIgYWx0PSfZgdmE2LPZgdmHINiv24zZhiDYr9uM2YjbjNivINmH24zZiNmFJ3NyYz0nL21laHJfbWVkaWEvaW1hZ2UvMjAxMS8wNi82NjE0MjRfb3JpZy5qcGcnIHN0eWxlPSdWSVNJQklMSVRZOiB2aXNpYmxlJz48L2E+ZGQCAQ9kFgJmDw8WAh8ABa4BPGEgY2xhc3M9ImJvb2t0aXRsZSIgaHJlZj0nbmV3c2RldGFpbC5hc3B4P05ld3NJRD0xMzQxNjU5JyB0YXJnZXQ9Il9ibGFuayI+2YHZhNiz2YHZhyDYr9uM2YYg2K/bjNmI24zYryDZh9uM2YjZhTwvYT48YnI+PHNwYW4gc3R5bGU9IlZJU0lCSUxJVFk6IHRydWUiY2xhc3M9IkJvb2tCb2R5Ij48L3NwYW4+ZGQCAg8PFgIfAAUCMTNkZAICD2QWFmYPDxYCHwAFBzEzNjY1OTlkZAICDw8WAh8ABRkmIzE3NzcmIzE3NzY6JiMxNzc3JiMxNzc4ZGQCAw8PFgIfAAUyJiMxNzc3JiMxNzc5JiMxNzg1JiMxNzc2LyYjMTc3NiYjMTc4MS8mIzE3NzYmIzE3NzlkZAIFDw8WAh8AZWRkAgYPDxYCHwAFSNmG2LHZhSDYp9mB2LLYp9ixINiq2K3ZhNuM2YQg2q/YsdiMINiv2KfZhti02q/Yp9mHINi02LHbjNmB2Iwg2YXZiNin2KzbjGRkAgcPDxYCHwBlZGQCCA8PFgIfAAVM2KfYsdin2KbZhyDZhtix2YUg2KfZgdiy2KfYsduMINio2LHYp9uMINmF2LfYp9mE2LnYp9iqINiy2KjYp9mGINi02YbYp9iu2KrbjGRkAgkPDxYCHwAFrALZvtqY2YjZh9i02q/Ysdin2YYg2K/Yp9mG2LTar9in2Ycg2LXZhti52KrbjCDYtNix24zZgSDZhtix2YUg2KfZgdiy2KfYsduMINix2Kcg2KjYsdin24wg2YXYt9in2YTYudin2Kog2LLYqNin2YYg2LTZhtin2K7YqtuMINi52LHYttmHINqp2LHYr9mG2K8g2qnZhyDZgtin2KjZhNuM2Kog2KrYsdis2YXZhyDZhdin2LTbjNmG24wg2YXYqtmG2Iwg2KfYs9iq2K7Ysdin2Kwg2KfYt9mE2KfYudin2Kog2KfYsiDZhdiq2YjZhiDYqNinINit2KzZhSDYqNin2YTYpyDZiCDYrtmE2KfYtdmHINmG2YjbjNiz24wg2LHYpyDYr9in2LHYry5kZAIKDw8WAh8ABacTPHA+DQoJ2KjZhyDar9iy2KfYsdi0INiu2KjYsdqv2LLYp9ix24wg2YXZh9ix2IwmbmJzcDvZiNit24zYryDZhdmI2KfYrNuMINmF2KzYsduMINi32LHYrSDYqNinINio24zYp9mGINin24zZhtqp2Ycg2KfbjNmGINio2LHZhtin2YXZhyDYqtit2Kog2LnZhtmI2KfZhiAmcXVvdDvYqtit2YTbjNmE2q/YsSDYtdix2YHbjCZxdW90OyDYudix2LbZhyDYtNiv2Ycg2KfYs9iq2Iwg2KfZgdiy2YjYrzog2KjYsdmG2KfZhdmHINiq2K3ZhNuM2YTar9ixINi12LHZgduMIFBhcnMgTW9ycGgg2K/Yp9ix2KfbjCDYr9mIINio2LnYryDZhti42LHbjCDZiCDaqdin2LHYqNix2K/bjCDYp9iz2KouPC9wPg0KPGRpdj4NCgnZiNuMINiv2LEg2KfbjNmGINio2KfYsdmHINiq2YjYttuM2K0g2K/Yp9ivOiDYqNmHINmE2K3Yp9i4INmG2LjYsduMINiz2KfYrtiq2YXYp9mGINiv2LHZiNmG24wg2qnZhNmF2Ycg2K/YsSDYstio2KfZhiDZgdin2LHYs9uMINix2Kcg2KfYqNiq2K/YpyDYtdmI2LHYqiDYqNmG2K/bjCDZhduMINqp2YbbjNmFINqp2Ycg2K/YsSDYotmGINmB2LHYotuM2YbYr9mH2KfbjCDYqtix2qnbjNioJm5ic3A7KENvbXBvdW5kaW5nKdiMINin2LTYqtmC2KfZgiAoRGVyaXZhdGlvbikg2Ygg2YbbjNiyINi12YjYsdiq2YfYp9uMINiq2LXYsduM2YHbjCAoSW5mbGVjdGlvbmFsKSDaqdmE2YXZhyDZhdi02K7YtSDZhduMINi02YjYry48YnIgLz4NCgkmbmJzcDs8L2Rpdj4NCjxkaXY+DQoJ2YXZiNin2KzbjCDYp9iv2KfZhdmHINiv2KfYrzog2K/YsSDYp9uM2YYg2KjYrti0INio2Ycg2YbYrdmI2Ycg2KrYsdqp24zYqCDYqtqp2YjYp9qY2YfYp9uMINmC2KfZhdmI2LPbjCDYr9ixINiz2KfYrtiq2YXYp9mGINqp2YTZhdmHINmF2LHaqdio2Iwg2YbYrdmI2Ycg2YjYp9qY2Ycg2LPYp9iy24wg2KjYpyDYp9mB2LLZiNiv2YYg2YjZhtiv2YfYp9uMINin2LTYqtmC2KfZgtuMINio2Kcg2YXYtNiu2LUg2qnYsdiv2YYg2KzYp9uM2q/Yp9mHINmI2YbYr9mH2KfbjCDYp9i02KrZgtin2YLbjCDYr9ixINiz2KfYrtiq2YXYp9mGINqp2YTZhdmHINmF2LTYqtmCINmIINio2Ycg2LXZiNix2Kot2qnZhNmF2YcmenduajvZh9inIChXb3JkLUZvcm1zKSDZvtix2K/Yp9iu2KrZhyDZhduMINi02YjYry48YnIgLz4NCgkmbmJzcDs8L2Rpdj4NCjxkaXY+DQoJ2YXYrNix24wg2LfYsditINio2Ycg2KjYrti0INiv2YjZhSDYp9uM2YYg2YbYsdmFINin2YHYstin2LEg2KrYrdiqINmI2Kgg2KfYtNin2LHZhyDaqdix2K8g2Ygg24zYp9iv2KLZiNixINi02K86INiv2LEg2YXYsdit2YTZhyDZvtuM2KfYr9mHINiz2KfYstuMINmG24zYsiDYudmF2YTaqdix2K8g2KjYsdmG2KfZhdmHINqp2YbYqtix2YQg2YXbjCZ6d25qOyDYtNmI2K8g2YbZhdmI2YbZhyDZhtmF2KfbjNi024wmbmJzcDvYp9uM2YYg2KjYsdmG2KfZhdmHINin2qnZhtmI2YYg2KjZhyDYtdmI2LHYqiDYqNix2K7YtyDYr9ixINii2K/YsdizINin24zZhtiq2LHZhtiq24xodHRwOi8vODEuMzEuMTkxLjExJm5ic3A72K/YsSDYr9iz2KrYsdizINin2LPYqi48YnIgLz4NCgkmbmJzcDs8L2Rpdj4NCjxkaXY+DQoJ2YjbjCDYqNinINio24zYp9mGINin24zZhtqp2Ycg2KfbjNmGINmG2LHZhSDYp9mB2LLYp9ixINiv2LEg2YXYt9in2YTYudin2Kog2LLYqNin2YYg2LTZhtin2K7YqtuMINin2LPYqtmB2KfYr9mHINmF24wg2LTZiNiv2Iwg2K7Yp9i32LHZhti02KfZhiDaqdix2K86INi52YTYp9mI2Ycg2KjYsSDYp9uM2YYg2KfYsiDYp9uM2YYg2YbYsdmFINin2YHYstin2LEg2YXbjCDYqtmI2KfZhiDYr9ixINix24zYtNmHINuM2KfYqNuMINqp2YTZhdin2KrYjCDYrNiz2KrYrNmIJnp3bmo72YfYp9uMINqv2YjZhtin2q/ZiNmGINiv2LEg2b7bjNqp2LHZhyDZh9in24wg2KjYstix2q8g2YXYqtmG24zYjCDYqtmH24zZhyDZgdix2YfZhtqv2YfYp9uMINio2LPYp9mF2K/bjNiMINmB2LHZh9mG2q/Zh9in24wg2LfbjNmB24zYjCDYqtmH24zZhyDZgdmH2LHYs9iqINmF2K/YrtmEINmH2KfbjCDYp9mG2YjYp9i5INmB2LHZh9mG2q8menduajvZh9inINmIINiv2LPYqtmI2LEg2YbZiNuM2LPbjCDZiCDZhdi32KfZhNi52KfYqiDZhdix2KjZiNi3INio2Ycg2YXZh9mG2K/Ys9uMINiy2KjYp9mGINin2LPYqtmB2KfYr9mHINqp2LHYry48YnIgLz4NCgkmbmJzcDs8L2Rpdj4NCjxkaXY+DQoJ2KfbjNmGINmF2K3ZgtmCINiq2KjYr9uM2YQg2YXYqtmGINio2Ycg2q/Zgdiq2KfYsdiMINiq2LHYrNmF2Ycg2YXYp9i024zZhtuM2Iwg2KfYs9iq2K7Ysdin2Kwg2KfYt9mE2KfYudin2Kog2KfYsiDZhdiq2YjZhiDYqNinINit2KzZhSDYqNin2YTYp9iMINiu2YTYp9i12YcmenduajvYs9in2LLbjCDZhdiq2YjZhiDZiCDYt9ix2KfYrduMINmF2YjYqtmI2LHZh9in24wg2KzYs9iq2KzZiNqv2LEg2YHYp9ix2LPbjCDYsdinINin2LIg2YLYp9io2YTbjNiqINmH2KfbjCDYp9uM2YYg2YbYsdmFINin2YHYstin2LEg2YbYp9mFINio2LHYry48L2Rpdj5kZAILDzwrAAsAZAINDw8WAh8AZWRkAgMPDxYCHwAFBzEzNjY1OTlkZGSBvvFzIcDp2FI8u0X+I/Zp+V+v2g==" type="hidden">
+
+<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAK4sauyDALxutnKDQLO79rvDAKegbnmD4nn12+0C4NaAAx76d7btQBk/cAL" type="hidden">
+				<table id="tblExternalFrame" align="center" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td align="center">
+								
+<div id="mhn-toolbar"><!--Toolbar -->
+	<div id="mhn-tabs"><!-- tabs-->
+		<div id="mhn-current" class="farsiTab" align="center">
+			<a href="http://www.mehrnews.com/fa" class="a1"><img src="newsdetail.aspx_files/parsi%252001.GIF"></a></div>
+		<div class="arabicTab" align="center">
+			<a href="http://www.mehrnews.com/ar/"><img src="newsdetail.aspx_files/arabi%252001.GIF"></a></div>
+		<div class="UrduTab" align="center">
+			<a href="http://www.mehrnews.com/ur"><img src="newsdetail.aspx_files/ordo%252001.GIF"></a></div>
+		<div class="EnglishTab" align="center">
+			<a href="http://www.mehrnews.com/en"><img src="newsdetail.aspx_files/english%252001.gif"></a></div>
+		<div class="TurkeyTab" align="center">
+			<a href="http://www.mehrnews.com/tr"><img src="newsdetail.aspx_files/turkey%252001.gif"></a></div>
+		<div class="DeutchTab" align="center">
+			<a href="http://www.mehrnews.com/de"><img src="newsdetail.aspx_files/germany%252001.gif"></a></div>
+		<div class="RussianTab" align="center">
+			<a href="http://www.mehrnews.com/ru"><img src="newsdetail.aspx_files/russian%252001.gif"></a></div>
+	</div> <!--end tabs-->
+</div> <!-- end toolbar-->
+
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<table id="mhn-frametable" cellpadding="0" cellspacing="0" width="100%">
+									<tbody><tr>
+										<td id="mhn-mehrlogo" height="57" width="128"><img src="newsdetail.aspx_files/biglogo.gif"></td>
+										<td id="mhn-mehr-banner" width="715"><img src="newsdetail.aspx_files/banner2.gif"></td>
+										<td id="mhn-left" align="center" height="57" width="128"><img src="newsdetail.aspx_files/search_bg2.gif"></td>
+									</tr>
+									<tr>
+										<td id="mhn-banner-thirdrow" colspan="3">
+											<div id="mhn-datetime"><span><b>تهران:</b>۱۵:۱۳ ,<span dir="ltr">۱۳۹۰/۰۵/۰۳</span> </span></div>
+										</td>
+									</tr>
+									<tr>
+										<td id="mhn-rightsection" rowspan="3" valign="top">
+<!--menu-->
+<style type="text/css">
+
+
+
+</style>
+<table id="tblMenu" border="0" cellpadding="0" cellspacing="0" height="100%" width="145">
+	<tbody><tr>
+		<td class="mhn-menutitle" align="center">اخبار</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa">صفحه نخست</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/NewsList.aspx?t=allnews">همه عناوین خبری</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Cultural">فرهنگ و هنر</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=literature">فرهنگ و ادب</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=ReligionAndThought">دین و اندیشه</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=UniversityHowzeh">حوزه و دانشگاه</a></div>
+			<div class="selected-mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=HiTech">فناوری های نوین</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=SocialAndOccations">اجتماعی</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Economic">اقتصادی</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Political">سیاسی</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=International">بین الملل</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Sport">ورزشی</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Nuclear">انرژی هسته ای</a></div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=Picture">عکس</a></div>
+			<div class="navigation  mhn-menuitem">
+				<ul>
+					<li>
+						<div class="parent">
+						<a href="http://www.mehrnews.com/fa/Default.aspx?t=Townships">استانها</a>
+						<ul>
+							<li>	
+								<div class="parent">
+									<a href="http://www.mehrnews.com/fa/Default.aspx?t=NorthernStates">شمال</a>
+									<ul>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=AzarbayjanSharghi">آذربایجان شرقی</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=AzarbayjanGharbi">آذربایجان غربی</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Ardabil">اردبیل</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Golestan">گلستان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Gilan">گیلان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Mazandaran">مازندران</a></li>
+																			
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="parent">
+									<a href="http://www.mehrnews.com/fa/Default.aspx?t=SouthernStates">جنوب</a>
+									<ul>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Esfahan">اصفهان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Booshehr">بوشهر</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=ChaharMahalBakhtiari">چهارمحال بختیاری</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Khoozestan">خوزستان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Fars">فارس</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Kohgilooyeboyerahmad">کهگیلویه و بویراحمد</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Hormozgan">هرمزگان</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="parent">
+									<a href="http://www.mehrnews.com/fa/Default.aspx?t=EasternStates">شرق</a>
+									<ul>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=khorasanShomali">خراسان شمالی</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=khorasanRazavi">خراسان رضوی</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=KhorasanJonoobi">خراسان جنوبی</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=SistanBalochestan">سیستان و بلوچستان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=kerman">کرمان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Yazd">یزد</a></li>									
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="parent">
+									<a href="http://www.mehrnews.com/fa/Default.aspx?t=WesternStates">غرب</a>
+									<ul>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Eilam">ایلام</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Zanjan">زنجان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Kordestan">کردستان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Kermanshah">کرمانشاه</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Lorestan">لرستان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Hamedan">همدان</a></li>
+										
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="parent">
+									<a href="http://www.mehrnews.com/fa/Default.aspx?t=CentralStates">مرکز</a>
+									<ul>
+										
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Alborz">البرز</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Tehran">تهران</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Semnan">سمنان</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Ghazvin">قزوین</a></li>
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Qom">قم</a></li>										
+										<li><a href="http://www.mehrnews.com/fa/Default.aspx?t=Markazi">مرکزی</a></li>
+										
+									</ul>
+								</div>
+							</li>
+						</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=holydefence">دفاع مقدس</a></div>			
+			<div class="mhn-menuitem" style="HEIGHT: 19px"><a href="http://www.mehrnews.com/fa/portals/Default.aspx?pid=2">خروجی ویژه</a></div>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 10px;">
+		</td>
+	</tr>
+	<!--<tr>
+		<td class="mhn-menuitem">
+		</td>
+	</tr>
+	<tr>
+		<td 
+    class='mhn-menuitem' 
+    ><A href="Default.aspx?t=Election"><blink2>ÇäÊÎÇÈÇÊ Ïåã</blink2></A></td>
+	</tr>-->
+	<tr>
+		<td><br><br><br>
+		</td>
+	</tr>
+	<tr>
+		<td class="mhn-menutitle" align="center">دفاتر خارجی</td>
+	</tr>
+	<tr>	
+		<td>
+			<div class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/Default.aspx?t=kl">دفتر جنوب شرق آسیا-مالزی</a></div>
+		</td>
+	</tr>
+	<tr>
+		<td><br><br><br>
+		</td>
+	</tr>
+	<tr>
+		<td align="center"><a href="http://www.mehrnews.com/fa/rssfeedlist.aspx" target="_blank"><img alt="MehrNews RSS Feed" src="newsdetail.aspx_files/Rss.gif" border="0">
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td><br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+<table id="tblLibrary" dir="rtl" align="center" bgcolor="#003366" border="0" cellpadding="0" cellspacing="0" width="145">
+	<tbody><tr>
+		<td class="mhn-menutitle" style="height: 19px;" align="center" bgcolor="#bdd3e8" height="19">
+			<span>کتابخانه مهر </span>
+		</td>
+	</tr>
+	<tr id="trIntroduceBooks">
+		<td>
+			<table id="Rmenu2_Library21_tblLibraryitem" align="Center" border="0">
+	<tbody><tr>
+		<td align="center"><a id="aBook" class="book" href="http://www.mehrnews.com/fa/newsdetail.aspx?NewsID=1341659" target="_blank"><img id="imgBook" alt="فلسفه دین دیوید هیوم" src="newsdetail.aspx_files/661424_orig.jpg" style="visibility: visible;" border="0px" width="100"></a></td>
+	</tr><tr>
+		<td align="center"><a class="booktitle" href="http://www.mehrnews.com/fa/newsdetail.aspx?NewsID=1341659" target="_blank">فلسفه دین دیوید هیوم</a><br><span style="VISIBILITY: true" class="BookBody"></span></td>
+	</tr>
+</tbody></table>
+		</td>
+	</tr>
+	<tr><td align="center">
+	<a class="bookarchive" href="http://www.mehrnews.com/fa/NewsList.aspx?t=library">فهرست<strong><font face="Verdana, Arial, Helvetica, sans-serif" size="1">»</font></strong>
+			</a>&nbsp;
+	</td>
+	</tr>
+</tbody></table>
+<br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="mhn-menutitle" align="center">امکانات</td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem"><a href="http://members.mehrnews.com/">بخش اعضا</a></td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/search.aspx?t=search">جستجوی پیشرفته</a></td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/contactus.aspx?t=contactus">تماس با ما</a></td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/aboutus.aspx?t=aboutus">درباره ما</a></td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/links.aspx?t=links">سایت های دیگر</a></td>
+	</tr>
+	<tr>
+		<td class="mhn-menuitem" style="height: 19px;"><a href="http://www.mehrnews.com/fa/feedback.aspx?t=feedback">برگه نظر خواهی</a></td>
+	</tr>
+	
+	<tr>
+		<td class="mhn-menuitem"><a href="http://www.mehrnews.com/fa/archive.aspx">آرشیو اخبار</a></td>
+	</tr>
+	
+	<tr>
+		<td>
+			<br>
+		</td>
+	</tr>	
+</tbody></table>
+</td>
+										<td id="mhn-contentsarea" valign="top"><script language="JScript">
+var g_bIE5orHigher = false;
+var g_bIE55 = false;
+var g_bIE6orHigher = false;
+var g_bWindows = false;
+var g_bWin9X = false;
+var g_bWin2K = false;
+var g_bWinXP = false;
+SniffBrowser();
+function SniffBrowser(){
+var c_sMSIE = "MSIE";
+var c_sMSIE_55 = "MSIE 5.5";
+var c_sOpera = "OPERA";
+var c_sWindows = "WINDOWS";
+var c_sWindows95 = "WINDOWS 95";
+var c_sWindows98 = "WINDOWS 98";
+var c_sWindowsNT = "WINDOWS NT";
+var sUA = String(navigator.userAgent).toUpperCase();
+var nMSIE = parseInt(sUA.indexOf(c_sMSIE));
+var nOpera = parseInt(sUA.indexOf(c_sOpera));
+if (nMSIE != -1 && nOpera == -1){
+g_bIE5orHigher = (parseInt(sUA.charAt(nMSIE + c_sMSIE.length + 1)) >= 5) ? true : false;
+g_bIE6orHigher = (parseInt(sUA.charAt(nMSIE + c_sMSIE.length + 1)) >= 6) ? true : false;
+g_bIE55 = (sUA.indexOf(c_sMSIE_55) != -1) ? true : false;}
+g_bWindows = (sUA.indexOf(c_sWindows) != -1) ? true : false;
+g_bWin9X = ((sUA.indexOf(c_sWindows95) != -1) ||(sUA.indexOf(c_sWindows98) != -1)) ? true : false;
+var nWindowsNT = parseInt(sUA.indexOf(c_sWindowsNT));
+if (nWindowsNT != -1){
+var sNTVer = sUA.substr(nWindowsNT + c_sWindowsNT.length + 1, 3);
+g_bWin2K = (sNTVer == "5.0") ? true : false;
+g_bWinXP = (sNTVer == "5.1") ? true : false;}
+}
+</script><script language="JScript">
+var lang = 0; // 1: Farsi, 0: English
+// Farsi keyboard map based on ISIRI-2901
+var farsikey = [
+0x0020, 0x0021, 0x061B, 0x066B, 0x00A4, 0x066A, 0x060C, 0x06AF,
+0x0029, 0x0028, 0x002A, 0x002B, 0x0648, 0x002D, 0x002E, 0x002F,
+0x0030, 0x06F1, 0x06F2, 0x06F3, 0x06F4, 0x06F5, 0x06F6, 0x06F7,
+0x06F8, 0x06F9, 0x003A, 0x0643, 0x003E, 0x003D, 0x003C, 0x061F,
+0x066C, 0x0624, 0x200C, 0x0698, 0x064A, 0x064D, 0x0625, 0x0623,
+0x0622, 0x0651, 0x0629, 0x00BB, 0x00AB, 0x0621, 0x004E, 0x005D,
+0x005B, 0x0652, 0x064B, 0x0626, 0x064F, 0x064E, 0x0056, 0x064C,
+0x0058, 0x0650, 0x0643, 0x062C, 0x005C, 0x0686, 0x00D7, 0x0640,
+0x200D, 0x0634, 0x0630, 0x0632, 0x064A, 0x062B, 0x0628, 0x0644,
+0x0627, 0x0647, 0x062A, 0x0646, 0x0645, 0x067E, 0x062F, 0x062E,
+0x062D, 0x0636, 0x0642, 0x0633, 0x0641, 0x0639, 0x0631, 0x0635,
+0x0637, 0x063A, 0x0638, 0x007D, 0x007C, 0x007B, 0x007E];
+// on Alt+Shift, switch language
+function FKeyDown(){// we will enter just in windows 98 edition
+if (!g_bWin9X) {return false;}
+if (window.event.shiftKey && window.event.altKey){
+if (lang == 0) {lang = 1;
+window.defaultStatus = "Farsi Mode";}
+else {lang = 0;
+window.defaultStatus = "English Mode";}
+return false;}
+return true;}
+// change the Farsi
+function FKeyPress(){
+// we will enter just in windows 98 edition
+if (!g_bWin9X) {return false;}
+var key = window.event.keyCode;
+var real = String.fromCharCode(window.event.keyCode);
+// Avoid processing if control or higher than ASCII (i.e., in Arabic Windows)
+if (key < 0x0020 || key >= 0x00FF)return;
+if (lang == 1) { //If Farsi
+if (key == 0x0020 && window.event.shiftKey) // Shift-space -> ZWNJ
+window.event.keyCode = 0x200C;
+else{window.event.keyCode = farsikey[key - 0x0020];}
+}return true;}
+</script><script language="JavaScript">
+function MM_swapImgRestore() 
+{ //v3.0
+	var i,x,a=document.MM_sr; 
+	for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}//MM_swapImgRestore()
+function MM_preloadImages() 
+{ //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}//MM_preloadImages()
+function MM_findObj(n, d) 
+{ //v4.01
+	var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}//MM_findObj(n, d)
+function MM_swapImage() 
+{ //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}//MM_swapImage()
+</script>
+		
+<div style="DISPLAY: none" id="statsPathDiv">http://stats.mehrnews.com/xstat_save.aspx</div>
+<div style="DISPLAY: none" id="appServerDiv">1-4</div>
+<div style="DISPLAY: none" id="CollectStats">True</div>
+<div style="DISPLAY: none" id="StatsStyleDiv">font-family:Times;font-size:13px;color:Maroon;padding-left:20px;font-weight:bold;</div>
+<table dir="rtl" id="tblCover" align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+	<tbody><tr height="1">
+		<td style="font-size: 1px;"><span id="Newsdetails2_lblNewsID" designtimedragdrop="163" style="display:inline-block;"><font color="White">1366599</font></span></td>
+	</tr>
+	<tr id="trContentNews">
+		<td id="tdContentNews" colspan="3" bgcolor="#ffffff" valign="top">
+			<table id="tblNews" border="0" cellpadding="6" cellspacing="4" width="100%">
+				<tbody><tr id="trNewsTime">
+					<td><span id="Newsdetails2_lblDateTitle"><font color="Gray" face="Arial" size="1">تهران:</font></span><span id="Newsdetails2_lblTime" class="title" dir="rtl" style="display:inline-block;"><font color="Gray" face="Arial" size="1">۱۰:۱۲</font></span><font color="gray">&nbsp;,&nbsp;</font>
+						<span id="Newsdetails2_lblDate" class="title" dir="rtl"><font color="Gray" face="Arial" size="1">۱۳۹۰/۰۵/۰۳</font></span></td>
+					<td align="left"><a class="links" onclick="MM_openBrWindow();" href="javascript:void(0);"><img id="imgPrintNews" alt="" src="newsdetail.aspx_files/printer.gif" border="0" height="15" width="16">
+							نسخه چاپی</a>&nbsp;&nbsp; <a class="links" onclick="MM_openTextVersionWindow();" href="javascript:void(0);">
+							<img id="Img1" alt="" src="newsdetail.aspx_files/newstextonly.gif" border="0">&nbsp;نسخه فقط 
+							متنی&nbsp;</a>&nbsp; <a class="links" href="http://www.mehrnews.com/fa/newsTextonly.aspx?NewsID=1366599" target="_self"><img id="imgTextOnly" alt="" src="newsdetail.aspx_files/newstextonly.gif" border="0"> دریافت فایل 
+							txt </a>&nbsp;&nbsp; <a class="links" onclick="MM_openMailWindow();" href="javascript:void(0);">
+							<img id="imgEmailNews" alt="" src="newsdetail.aspx_files/email.gif" border="0" height="11" width="16">
+							ارسال این خبر به دوستان </a>
+					</td>
+				</tr>
+				<tr>
+					<td class="visitCountTdLeft" colspan="3" align="left" valign="middle">
+<div id="serviceStatsPathDiv" style="DISPLAY:none">http://stats.mehrnews.com/xstat_service_save.aspx</div>
+<div id="appServerDiv" style="DISPLAY:none">1-4</div>
+<div id="CollectStats" style="DISPLAY:none">True</div>
+<div id="StatsStyleDiv" style="DISPLAY:none">font-family:Times;font-size:13px;color:Maroon;padding-left:20px;font-weight:bold;</div>
+<div style="DISPLAY: none" id="statsPathDiv">http://stats.mehrnews.com/xstat_save.aspx</div>
+<div style="DISPLAY: none" id="ShowStats">False</div>
+
+<div id="ServiceIDDiv" style="DISPLAY:none">
+
+
+					0</div>
+<div id="NewsIDDiv" style="DISPLAY:none">
+		1366599</div>
+		
+		
+<div id="visitCountDiv">
+
+	<script>
+			function trim(str) {
+				return str.replace(/^\s+|\s+$/g,"");
+			}
+
+			
+		var colStatsSel = document.getElementById("CollectStats");
+		var col = colStatsSel!=null && colStatsSel.innerHTML!="" && (colStatsSel.innerHTML.toLowerCase());
+		if(col!="false"){
+		
+			
+			//var newIdSel = document.all["lblNewsID"];//document.getElementById("lblNewsID");
+			var serviceIdSel = document.getElementById("ServiceIDDiv");
+			str = serviceIdSel.innerHTML.replace(/<.*?>/g,'');
+			
+			service = str;
+			
+			var newIdSel = document.getElementById("NewsIDDiv");
+			str = newIdSel.innerHTML.replace(/<.*?>/g,'');
+			newsId = str;
+				
+			var showStats = document.getElementById("ShowStats");
+			str = showStats.innerHTML.replace(/<.*?>/g,'');
+			showStats = str;			
+			if(newsId!=null)				
+				newsId = trim(newsId);
+
+			if(service!=null)				
+				service = trim(service);
+				
+			if(newsId!=""){
+						
+				var statsServerDiv = document.getElementById("statsPathDiv");//document.getElementById('statsPathDiv');
+				statsServer = statsServerDiv.innerHTML;
+				
+				var appServerDiv = document.getElementById("appServerDiv");//document.getElementById('appServerDiv');
+				appServer = appServerDiv.innerHTML;
+					
+				var StatsStyleDiv = document.getElementById("StatsStyleDiv");
+				StatsStyle = StatsStyleDiv.innerHTML;
+				
+				
+				var url = statsServer + '?appservCode=' + appServer + '&rnd=' + Math.round(Math.random()*50000) + '&newsId='+newsId + '&dir=rtl&style=' + StatsStyle;
+				
+				//GetNewsStats(statsServer , appServer , newsId);
+				if(showStats=="True")
+								
+					document.write ('<iframe  scrolling=no width=60 height=13 border=2 frameborder=0 allowtransparency="false" src='+url+' style="margin:0px; padding:0px; color:red;" ></iframe>');
+				else
+				
+					document.write ('<iframe  scrolling=no width=0 height=0 border=2 frameborder=0 allowtransparency="false" src='+url+' style="margin:0px; padding:0px; color:red;" ></iframe>');
+				
+			}
+			else if(service!=""){
+			
+				var statsServerDiv = "";
+				statsServerDiv = document.getElementById("serviceStatsPathDiv");//document.getElementById('statsPathDiv');					
+					
+				statsServer = statsServerDiv.innerHTML;
+				
+				var appServerDiv = document.getElementById("appServerDiv");//document.getElementById('appServerDiv');
+				appServer = appServerDiv.innerHTML;
+					
+				var StatsStyleDiv = document.getElementById("StatsStyleDiv");
+				StatsStyle = StatsStyleDiv.innerHTML;
+				
+				
+				var url = statsServer + '?appservCode=' + appServer + '&rnd=' + Math.round(Math.random()*50000) + '&serviceId='+service + '&LCID=1065&dir=ltr&style=' + StatsStyle;				
+				
+				//GetNewsStats(statsServer , appServer , newsId);						
+				
+				if(showStats=="True")
+					document.write ('<iframe  scrolling=no width=60 height=13 border=2 frameborder=0 allowtransparency="false" src='+url+' style="margin:0px; padding:0px; color:red;" ></iframe>');
+				else
+					document.write ('<iframe  scrolling=no width=0 height=0 border=2 frameborder=0 allowtransparency="false" src='+url+' style="margin:0px; padding:0px; color:red;" ></iframe>');
+			}			
+		}
+	</script><iframe border="2" allowtransparency="false" src="newsdetail.aspx_files/xstat_save.txt" style="margin: 0px; padding: 0px; color: red;" frameborder="0" height="0" scrolling="no" width="0"></iframe>
+</div>
+</td>
+				</tr>
+				<tr>
+					<td><span id="Newsdetails2_lbl_Error"><font color="Red"></font></span></td>
+				</tr>
+				<tr id="trNewsUpTitle">
+					<td colspan="2"><br>
+						<span id="Newsdetails2_lblUpTitle" class="news_up_title" dir="rtl"></span></td>
+				</tr>
+				<tr id="trNewsTitle">
+					<td colspan="2"><span id="Newsdetails2_lblTitle" class="news_title" dir="rtl">ارائه نرم افزاری برای مطالعات زبان شناختی</span></td>
+				</tr>
+				<tr id="trNewsLead">
+					<td colspan="2"><span id="Newsdetails2_lblLead" class="news_lead" dir="rtl">پژوهشگران
+ دانشگاه صنعتی شریف نرم افزاری را برای مطالعات زبان شناختی عرضه کردند که
+ قابلیت ترجمه ماشینی متن، استخراج اطلاعات از متون با حجم بالا و خلاصه 
+نویسی را دارد.</span></td>
+				</tr>
+				<tr id="trNewsBody">
+					<td colspan="2"><span id="Newsdetails2_lblBody" class="news_body" innerhtml="html"><p>
+	به گزارش خبرگزاری مهر،&nbsp;وحید مواجی مجری طرح با بیان اینکه این 
+برنامه تحت عنوان "تحلیلگر صرفی" عرضه شده است، افزود: برنامه تحلیلگر صرفی
+ Pars Morph دارای دو بعد نظری و کاربردی است.</p>
+<div>
+	وی در این باره توضیح داد: به لحاظ نظری ساختمان درونی کلمه در زبان فارسی
+ را ابتدا صورت بندی می کنیم که در آن فرآیندهای ترکیب&nbsp;(Compounding)،
+ اشتقاق (Derivation) و نیز صورتهای تصریفی (Inflectional) کلمه مشخص می 
+شود.<br>
+	&nbsp;</div>
+<div>
+	مواجی ادامه داد: در این بخش به نحوه ترکیب تکواژهای قاموسی در ساختمان 
+کلمه مرکب، نحوه واژه سازی با افزودن وندهای اشتقاقی با مشخص کردن جایگاه 
+وندهای اشتقاقی در ساختمان کلمه مشتق و به صورت-کلمه‌ها (Word-Forms) 
+پرداخته می شود.<br>
+	&nbsp;</div>
+<div>
+	مجری طرح به بخش دوم این نرم افزار تحت وب اشاره کرد و یادآور شد: در 
+مرحله پیاده سازی نیز عملکرد برنامه کنترل می‌ شود نمونه نمایشی&nbsp;این 
+برنامه اکنون به صورت برخط در آدرس اینترنتیhttp://81.31.191.11&nbsp;در 
+دسترس است.<br>
+	&nbsp;</div>
+<div>
+	وی با بیان اینکه این نرم افزار در مطالعات زبان شناختی استفاده می شود، 
+خاطرنشان کرد: علاوه بر این از این نرم افزار می توان در ریشه یابی کلمات، 
+جستجو‌های گوناگون در پیکره های بزرگ متنی، تهیه فرهنگهای بسامدی، فرهنگهای
+ طیفی، تهیه فهرست مدخل های انواع فرهنگ‌ها و دستور نویسی و مطالعات مربوط 
+به مهندسی زبان استفاده کرد.<br>
+	&nbsp;</div>
+<div>
+	این محقق تبدیل متن به گفتار، ترجمه ماشینی، استخراج اطلاعات از متون با 
+حجم بالا، خلاصه‌سازی متون و طراحی موتورهای جستجوگر فارسی را از قابلیت 
+های این نرم افزار نام برد.</div></span></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><br>
+						<table style="border-width: 1px; border-style: dashed; border-color: rgb(170, 170, 170);" align="center" border="0" cellpadding="3" cellspacing="3" width="400">
+							<tbody><tr>
+								<td align="center" bgcolor="#f7f7f7">
+									<span style="FONT-SIZE: 13px"><strong><span style="FONT-SIZE: 13px"><strong>&nbsp;امانت داری و 
+													اخلاق مداری</strong>
+												<br></span></strong>
+										<br>
+										استفاده از این خبر فقط با ذکر منبع&nbsp; <font color="#df0029">"خبرگزاری مهر"</font>
+										&nbsp;مجاز است. </span>
+									<br>
+									
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr id="trNewsRelatedNews">
+					<td colspan="2">
+						<table id="tblrelatednews" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td></td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr id="trNews">
+					<td colspan="2"><input name="Newsdetails2$hidInputBut" id="Newsdetails2_hidInputBut" type="hidden"></td>
+				</tr>
+			</tbody></table>
+			<span id="Newsdetails2_lblRelatedNewsID" style="display:inline-block;"><font color="White"></font></span></td>
+	</tr>
+</tbody></table>
+
+											<span id="lblNewsID" style="display:inline-block;"><font color="White">1366599</font></span>
+										</td>
+										<td id="mhn-leftsection" rowspan="3" valign="top" width="128">
+											
+<table id="tbllestsection" align="center" cellpadding="0" cellspacing="0" width="128">
+	<tbody><tr>
+		<td>
+			<table align="center" cellpadding="0" cellspacing="0" width="128">
+				<tbody><tr>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						
+						<table align="center" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td>
+			
+		</td>
+	</tr><tr>
+	
+	</tr><tr>
+		<td>
+			
+		</td>
+	</tr><tr>
+
+	</tr><tr>
+		<td>
+			
+		</td>
+	</tr><tr>
+</tr></tbody></table>
+						
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+<table align="center">
+	<tbody><tr>
+		<td class="footer" align="center">.............................................................................................................................</td>
+	</tr>
+	<tr>
+		<td class="footer" align="center">
+			<a class="FooterLink" href="http://www.mehrnews.com/fa"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					صفحه اول</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/newslist.aspx?t=allnews">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">همه 
+					عناوین خبری</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Cultural">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">فرهنگ 
+					و هنر</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=literature"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					فرهنگ و ادب</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=ReligionAndThought">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">دین 
+					و اندیشه</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=universityhowzeh">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">حوزه 
+					و دانشگاه</span></a>
+			<br>
+			<a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=hitech"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					فناوری های نوین</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=SocialAndOccations">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">اجتماعی</span></a>|
+			<a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Economic"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					اقتصادی</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Political"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					سیاسی</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=International">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">بین 
+					الملل</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Sport"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					ورزشی</span></a>
+			<br>
+			<a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Nuclear"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					انرژی هسته ای</span></a> | <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=Picture">
+				<span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">عکس</span></a>
+			| <a class="FooterLink" href="http://www.mehrnews.com/fa/Default.aspx?t=townships"><span style="FONT-FAMILY: times new roman; FONT-SIZE: 12px; FONT-WEIGHT: bold">
+					استانها</span></a>
+		</td>
+	</tr>
+	<tr>
+		<td class="footer" dir="ltr" style="font-style: normal; color: rgb(119, 119, 119); font-size: 12px; font-weight: normal; text-decoration: none;" align="center">
+			© 2003-2010 Mehr News Agency<span dir="ltr" class="footer"></span>
+		</td>
+	</tr>
+</tbody></table>
+<br>
+											<br>
+											<br></td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<input name="rt" id="rt" type="hidden"> <input name="rt2" id="rt2" value="180000" type="hidden">
+			</form>
+		</div>
+		<div style="visibility: hidden;" id="FooterStrip" align="center">
+			<table align="center" cellpadding="0" cellspacing="0" height="100%" width="1020">
+				<tbody><tr>
+					<td class="urgentTD" align="center" width="100%"><img src="newsdetail.aspx_files/arrow-red.gif" style="float: right;">
+						<div id="urgentNews"></div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<script language="JAVASCRIPT">
+
+	var index=0;
+	var k=0;
+	var st = new Array();
+	var stCopy = new Array();
+	var temp="";	
+	
+	
+function doBlink() {
+	var blink = document.all.tags("BLINK")			
+	for (var i=0; i<blink.length; i++){			
+		blink[i].style.color =( (blink[i].style.color=="#ffff6d")?"white":"#ffff6d");
+	}
+	
+	
+	var blink2 = document.all.tags("blink2")		
+	for (var i=0; i<blink2.length; i++){			
+		blink2[i].parentNode.style.color =( (blink2[i].parentNode.style.color=="#fdd949")?"white":"#fdd949");
+	}
+}
+
+
+function startBlink() {
+	if (document.all)
+		setInterval("doBlink()",500);
+}
+
+
+	var latesyear = 0;
+	var latesmonth = 0;
+	var latesday = 0;
+	var lateshourr = 0;
+	var latesminute = 0;
+	var latesscond = 0;
+	var rsel = document.getElementById("rt");
+	var rsel2 = document.getElementById("rt2");
+	
+	
+		
+	function LoadLatestNews()
+	{
+		var sel = document.getElementById("tblLatestNews");
+		if(sel==null)return;
+		
+		var Req = CreateXMLHTTRequest();
+		if(Req==null)
+			return;
+		var currentTime = new Date();
+		var year = currentTime.getFullYear();
+		var month= currentTime.getMonth()+1;
+		var day = currentTime.getDate();
+		var hour = currentTime.getHours();
+		var minute = currentTime.getMinutes();
+		var second = currentTime.getSeconds();
+		Req.open("get", "DataEngine.aspx?key=Lnews&y="+year+"&m="+month+"&d="+day+"&h="+hour+"&mi="+minute+"&s="+second, true);
+				
+		Req.onreadystatechange = function()
+			{//start onreadystatechange function
+			
+				// browser does not support 
+				if (Req.readyState != 4)  { return; }
+					
+				var sel = document.getElementById("tblLatestNews");
+				lnews = Req.responseText.split('\n');
+				
+				if(lnews.length>2){
+					timedetaiels = lnews[0].split('-');
+										
+					var ul  = "<ol>";
+					for(i=1; i<lnews.length-1 ; i++){
+						lnewsitem = lnews[i].split('\r');
+						ul +="<li><a  target='_blank' href='newsdetail.aspx?NewsID="+lnewsitem[0]+"'>"+ lnewsitem[1]+"</a></li>";
+					}
+					
+					ul += "</ol><br class=\"mhn-custombr2\">";
+					sel.innerHTML = ul;
+				}
+			}
+			
+			Req.send(null);
+			setTimeout("LoadLatestNews();" , rsel.value);
+	}
+			
+	
+	function CreateXMLHTTRequest()
+	{
+		var xhr;
+		try {
+			 // Mozilla / Safari / IE7<BR>6          
+				 xhr = new XMLHttpRequest();				 
+				  return xhr; 
+			} 
+			catch(e){
+			   // IE
+			   var XMLHTTP_IDS = new Array('MSXML2.XMLHTTP.5.0' , 'MSXML2.XMLHTTP.4.0','MSXML2.XMLHTTP.3.0','MSXML2.XMLHTTP', 'Microsoft.XMLHTTP' );
+				var success = false;
+				for (var i=0;i<XMLHTTP_IDS.length && !success; i++) {
+				try{
+					   xhr = new ActiveXObject(XMLHTTP_IDS[i]);
+					   success = true;
+				 }
+				catch(e){}
+			  }
+			 if(!success)return null;
+			 return xhr; 
+		}
+	
+	}
+	
+	
+	function ticker() {			
+		var doc ;
+		
+		var elem1 =  document.getElementById("FooterStrip");
+		var elem2 = document.getElementById("urgentNews");
+				
+		if(index==0 && k==0)
+			{
+				if(st=="" || st==null)
+				{
+					elem1.style.visibility="hidden";
+					setTimeout("ticker()",1000);// there is no urgent news to show , check it 1000(1s) ms later
+					return;
+					}
+					
+					if(st.length==0)
+					{ 						
+						elem1.style.visibility="hidden";
+						setTimeout("ticker()",1000);// there is no urgent news to show , check it 1000(1s) ms later
+						return;
+					}
+					
+					// if there is any urgent news to show
+					stCopy = st;
+					if( stCopy.length<1) //empy news urgent
+					{ 
+					    elem1.style.visibility="hidden";
+					    setTimeout("ticker()",1000);return;
+					}
+					else
+					   elem1.style.visibility="visible";
+					
+				}
+				
+				// show news
+				  
+				var msg=stCopy[index].split('\t');				
+				temp += msg[0].charAt(k);
+				
+				elem2.innerHTML="";
+				if(msg[1]!="0"){
+					elem2.innerHTML="<a target='_blank' class='urgentNewsLink' href='newsdetail.aspx?NewsID="+msg[1]+"'>" + temp +"</a>" ;
+				}
+				else
+				   elem2.innerHTML =  elem2.innerHTML + temp;
+				
+				k = k+1;
+				if(k>=msg[0].length) // if this end of the current message
+				{
+					index = index+1; //move to next message
+					temp="";
+					k=0;// set cursor to point to start of the new message
+					if(index>=stCopy.length){  // end of all messages
+						index=0;
+						k=0;
+						setTimeout("ticker()",50);	
+						return;				
+					}					
+					setTimeout("ticker()",4000);  return; // after a message
+				}
+				else
+					setTimeout("ticker()",50);// tick time , between two characters
+			 }
+
+
+
+		function LoadUrgentNews()
+			{
+				var Req = CreateXMLHTTRequest();
+				if(Req==null){
+					
+					return;
+					}
+				var currentTime = new Date();
+				var year = currentTime.getFullYear();
+				var month= currentTime.getMonth()+1;
+				var day = currentTime.getDate();
+				var hour = currentTime.getHours();
+				var minute = currentTime.getMinutes();
+				var second = currentTime.getSeconds();
+				Req.open("get", "DataEngine.aspx?key=Unews&y="+year+"&m="+month+"&d="+day+"&h="+hour+"&mi="+minute+"&s="+second, true);
+				
+				Req.onreadystatechange = function()
+				{				
+					if (Req.readyState != 4)  { return; }
+					if(Req.responseText!=""){		
+						st = Req.responseText.split('\n');
+						}
+					else{
+						st = null;		
+						return;
+						}
+					
+					
+					if(st==null || st=='undefined' || st.length<=1)//request timeout/empty request
+					{
+						st=null;						
+						return;
+					}
+				}
+				Req.send(null);
+				
+				setTimeout("LoadUrgentNews();" ,rsel2.value);
+			}
+			
+			function SaveStats()
+			{
+				
+				var colStatsSel = document.all["CollectStats"];
+				var col = colStatsSel!=null && colStatsSel.innerHTML!="" && (colStatsSel.innerHTML.toLowerCase());
+				if(col=="false"){return;}
+				
+					
+				var newIdSel = document.all["lblNewsID"];//document.getElementById("lblNewsID");
+				str = newIdSel.innerHTML.replace(/<.*?>/g,'');
+				newsId = str;
+				
+			
+				if(newsId==""){return;}
+				
+				var statsServerDiv = document.all["statsPathDiv"];//document.getElementById('statsPathDiv');
+				statsServer = statsServerDiv.innerHTML;
+				
+				var appServerDiv = document.all["appServerDiv"];//document.getElementById('appServerDiv');
+				appServer = appServerDiv.innerHTML;
+				
+				GetNewsStats(statsServer , appServer , newsId);
+			}
+		
+			function GetNewsStats(statsServerPath ,  appServerCode , newsId)
+			{
+				
+				var Req = CreateXMLHTTRequest();
+				if(Req==null)
+					return;
+				
+				var url = statsServerPath + '?appservCode=' + appServerCode + '&rnd=' + Math.round(Math.random()*50000) + '&newsId='+newsId;				
+				
+				Req.open("get", url , true);
+				
+				Req.onreadystatechange = function()
+					{//start onreadystatechange function
+						// browser does not support 
+						if (Req.readyState != 4)  { return; }
+						else {
+						//return eq.responseText;
+						
+						visCount = Req.responseText;
+						
+						var visitDiv = document.all["visitCountDiv"];//document.getElementById("visitCountDiv");
+						if(visCount!=parseInt(visCount))
+							visitDiv.innerHTML = "-";
+						else
+							visitDiv.innerHTML =  visCount;
+						}
+					}
+				Req.send(null);				
+			}
+			function stripHTML(str){
+			var re = /(<([^>]+)>)/gi;
+			
+			str =str.replace(re, "");
+			return str;
+			}			
+</script>
+		<script language="javascript">
+				function MM_openBrWindow() { //v2.0
+									_winName = "MehrNews";
+					_info =  "toolbar=yes,location=no,directories=no,status=yes,menubar=no,center=yes,scrollbars,resizable=yes,dependent,height=600,width=650";
+					urlLoc = "NewsPrint.aspx?NewsID=" + document.all["lblNewsID"].innerText;
+					
+					window.open(urlLoc,_winName,_info);
+				} // MM_openBrWindow function
+				function MM_openMailWindow() { //v2.0
+					_winName = "MehrNews";
+					_Width = 518;
+					_Height = 470;
+					_WinX = (document.body.offsetWidth - _Width ) / 2;
+					_WinY = (document.body.offsetHeight - _Height ) / 2;
+					//alert(_WinX + "-->" + _WinY);
+					_info =  "toolbar=no,location=no,directories=no,status=yes,menubar=no,center=yes,scrollbars,resizable=yes,left=" + _WinX +",top=" + _WinY +",dependent,height=" + _Height + ",width=" + _Width;
+					urlLoc = "EmailNews.aspx?NewsID=" + document.all["lblNewsID"].innerText;
+					
+					window.open(urlLoc,_winName,_info);
+				} // MM_openBrWindow function
+				
+				
+				function MM_openTextVersionWindow() { //v2.0
+					_winName = "MehrNews";
+					_info =  "toolbar=yes,location=no,directories=no,status=yes,menubar=no,center=yes,scrollbars,resizable=yes,dependent,height=600,width=650,title=dsfg";
+					urlLoc = "NewsTextOnlyVersion.aspx?NewsID=" + document.all["lblNewsID"].innerText;
+					window.open(urlLoc,_winName,_info);
+				} // MM_openBrWindow function
+				
+				function SetTitle()
+				{
+					var sel = document.getElementById("Newsdetails2_lblTitle");					
+					if(document.all)
+					{//IE
+						document.title = sel.innerText;
+					}
+					else
+					{
+						document.title = sel.textContent;
+					}
+				}
+		</script>
+		<script language="javascript">
+		//	SaveStats();
+		</script>
+		<!--iframe src="http://192.168.100.34/mehrStats/xstat.aspx?appservCode='1-4'&newsId=22" width=100 height=100 frameborder=1></iframe-->
+	
+
+</body></html>

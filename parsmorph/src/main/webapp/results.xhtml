@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+<body>
+<ui:composition>
+    <p:fieldset legend="Result(s)" rendered="#{controllerBean.possibilities!=null}" toggleable="true" toggleSpeed="500">
+        <ui:repeat value="#{controllerBean.possibilities}" var="possibility">
+            <p:tabView>
+                <p:tab title="Persian">
+                    <p:tree value="#{possibility.persianTreeNode}" var="node" id="persianTree" style="font: bold 14px 'B Lotus'"
+                            >
+                        <p:treeNode id="persianTreeNode">
+                            <font color="#{node.color}"><h:outputText value="#{node.value}" id="lblNode"/></font>
+                        </p:treeNode>
+                    </p:tree>
+                </p:tab>
+                <p:tab title="Latin">
+                    <p:tree value="#{possibility.latinTreeNode}" var="node" id="latinTree" style="font: bold 14px 'B Lotus'"
+                            >
+                        <p:treeNode id="latinTreeNode">
+                            <font color="#{node.color}"><h:outputText value="#{node.value}" id="lblNode"/></font>
+                        </p:treeNode>
+                    </p:tree>
+                </p:tab>
+            </p:tabView>
+        </ui:repeat>
+    </p:fieldset>
+</ui:composition>
+</body>
+</html>

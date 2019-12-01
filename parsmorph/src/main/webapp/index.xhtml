@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<!--<f:loadBundle basename="Messages" var="msg"/>-->
+<h:head>
+    <h:outputScript library="scripts" name="isiri2901.js"/>
+    <h:outputStylesheet library="styles" name="parsmorph.css"/>
+    <title>Pars Morph</title>
+</h:head>
+
+<h:body>
+    <div id="wrap">
+        <div id="header">
+            <h1 id="logo-text"><a href="index.xhtml">Pars Morph</a></h1>
+
+            <p id="slogan">A Persian Morphological Analyzer</p>
+        </div>
+
+        <div id="content-wrap">
+            <p:tabView id="mainTab" activeIndex="#{controllerBean.activeIndex}">
+                <p:tab title="Home">
+                    <ui:include src="main.xhtml"/>
+                </p:tab>
+                <p:tab title="Phonology">
+                    <ui:include src="phonology.xhtml"/>
+                </p:tab>
+                <p:tab title="Help">
+                    <ui:include src="help.xhtml"/>
+                </p:tab>
+                <p:tab title="Pars Morph in News">
+                    <ui:include src="news.xhtml"/>
+                </p:tab>
+                <p:tab title="About">
+                    <ui:include src="about.xhtml"/>
+                </p:tab>
+            </p:tabView>
+        </div>
+
+        <div id="footer">
+            <p>
+                2010-12
+            </p>
+        </div>
+    </div>
+
+</h:body>
+</html>

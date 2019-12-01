@@ -1,0 +1,327 @@
+/*
+ * Copyright 2012 Vahid Mavaji
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
+body { background: #EFF7F7; }
+body, form, div, table, td, span { font: normal 12px Tahoma; line-height: 150%; margin: 0px; direction: rtl; text-align: right; }
+
+a { text-decoration: none; }
+a:link { color: #000080; }
+a:visited { color: #B02525; }
+a:hover { color: #B02525; }
+a:active { color: #B02525; }
+a:visited:hover {color: #B02525; }
+a img { border: none 0px; }
+
+input, textarea, select, option { font: normal 12px Tahoma; }
+
+
+	.header { background: #ddd; width: 995px; }
+		.logo { }
+			.logo img { margin: 0; padding: 0; border: none 0px; width: 995px; height: 94px; }
+			.logoinfobar { margin: 0; height: 20px; width: 995px; background: #ddd;  }
+				.lngsitelinks, .lngsitelinks a { font: normal 10px Tahoma, Arial, Times; }
+				.lngsitelinks { float: right; text-align: right; padding: 3px 7px 3px 0; width: 180px; }
+				.dates { float: right; text-align: center; width: 530px; padding: 1px 24px 0 0; margin: 0 7px; font: normal 10px Tahoma; }
+					.seldate { font: normal 13px Tahoma; }
+				.gmttime { float: left; text-align: left; padding: 0 0 0 35px; width: 200px; direction: ltr; }
+
+	.mainframe { text-align: right; width: 995px; overflow: hidden; clear: both;}
+		.rightcolumn { float: right; text-align: center; width: 163px; background: #efbd98; margin: 2px 0 -30000px 0; padding: 0 0 30000px 0; }
+			
+						.sdmenu { width: 147px; overflow: hidden; margin: 6px 8px; }
+							.sdmenu, .sdmenu div, .sdmenu span { direction: rtl; text-align: right; }
+							div.sdmenu div { overflow: hidden; }
+							.menupane  { background: #FFDBBB; padding: 0 0 10px 0; }
+								.menupane form { padding: 10px; }
+							.emptyspace { height: 10px; overflow: hidden; background: #efbd98; }
+							.menutitlepane { background: url('/shares/img/menutitle.gif') no-repeat left; color: #fff; font: normal 11px Tahoma; padding: 3px; }
+							
+							.submenu, .unsubmenu, .submenuexpanded { padding: 0 36px 3px 0; display: block; margin: 4px 0 4px 0;
+													font: normal 11px Tahoma, sans-serif; color: #000084; }
+							.unsubmenu { background: url('/shares/img/unsubmenu.gif') no-repeat 97% 50%; }
+							.submenu { background: url('/shares/img/expanded.gif') no-repeat 97% 50%; cursor: pointer; }
+								.smcollapsed { display: none; }
+								
+								.submenuexpanded { background: url('/shares/img/collapsed.gif') no-repeat right; cursor: pointer; } /* #EEB77F*/
+								.smexpanded { display: block; padding: 0 20px 0 0; }/* background-color: #efcba7;EEB77F*/
+									.smexpanded a { padding: 0 16px 0 0; background: url('/shares/img/arrow.gif') no-repeat 100% 5px; }
+									
+							div.sdmenu div a, div.sdmenu span a{ color: #000084; text-decoration: none; padding: 2px 0 2px 0;
+								display: block; font: normal 11px Tahoma, sans-serif; }
+							
+							div.sdmenu div a:hover, div.sdmenu span a:hover { color: #F50; font: normal 11px Tahoma, sans-serif; background-color: #efbd98; }/* background-color: #EEB77F;*/
+
+
+		.centercolumn { float: right; text-align: right; background: #eff8f7; width: 605px; margin: 0 0 -30000px 0; padding: 0 0 30000px 0; overflow: hidden; }
+			.newsmainpane { padding: 3px 20px 0 20px; text-align: left; }
+			.newsrotitr { font: normal 12px Arial; }
+			.newslead { text-align: justify; margin: 3px 0; font: normal 13px Tahoma; }
+			
+		.leftcolumn { float: left; text-align: center; border-right: solid 3px #dbdbdb; width: 223px; background: #dbdbdb url('/Shares/img/leftcolbg.gif') repeat-x top; margin: 0 0 -30000px 0; padding: 0 0 30000px 0; overflow: hidden; }
+			.leftmainnewspane { margin: 2px 10px 2px 5px; width: 205px; text-align: right; }
+				.advertisement { padding: 0; text-align: center; }
+					.advertisement div, .advertisement p { margin: 10px 0; padding: 0; text-align: center; }
+					.advertisement img { margin: 0; padding: 0; width: 205px; }
+				.leftcolumntopics { padding: 6px 10px 6px 0; margin: 5px 1px 0 0; width: 205px; background: url('/Shares/img/leftcoltitlebg.gif') no-repeat right top; font: normal 11px Tahoma; }
+					.leftcolumntopics, .leftcolumntopics a { font: bold 11px Tahoma; color: #fff; }
+		
+		.footerpane { width: 995px; text-align: right; }
+			.copyright { width: 995px; background: #999; float: right; text-align: center; direction: ltr; font: normal 10px verdana; padding: 2px 0; }
+			.bottomlinks { width: 995px; text-align: center; margin: 7px 0; clear: both; }
+				.bottomlinks p { margin: 7px 0;}
+				.bottomlinks a { font: normal 12px Tahoma,sans-serif; }
+
+
+
+			.tickerpane { color: #b20815; padding: 3px 22px 3px 25px; border-bottom: solid 1px #eee; }
+				.tickerpane a { color: #b20815; }
+			
+			.impnews { margin: 14px 0 0 0;}
+				.impnewsinfo { float: right; width: 300px; padding: 7px 0 0 0; }
+					.impnewsinfotitle { font: bold 20px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+				.impnewspic { float: left; }
+					.impnewspic img { width: 250px; height: 150px; border: 1px solid #FFD082; }
+				.impdownline { clear: both; height: 2px; overflow: hidden; margin: 15px 2px 25px 0; }
+					.impdownline div { width: 260px; border-top: solid 2px #ddd; }
+			
+			.topnews { clear: both; margin: 15px 0 0 0; }
+				.impnewsinfo { }
+					.topnewsinfotitle { font: bold 16px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+				.topnewspic { float: right; text-align: right; margin: 0 0 15px 7px; }
+					.topnewspic img { width: 75px; height: 92px; border: 1px solid #FFD082; }
+				.topdownline { clear: both; text-align: left; direction: ltr; border-bottom: solid 1px #ddd; width: 260px; height: 2px; overflow: hidden; }
+			.linktoalltops { margin: 20px 0 40px 0; }
+				.linktoalltops, .linktoalltops a, .linktoalltops span { text-align: center; font: normal 12px "Times New Roman", Times, Arial; }
+			
+			.lastnews { background: #fff url('/Shares/img/leftcolnewsbg.gif') repeat-x right top; border-top: solid 1px #fff; width: 204px; padding: 15px 0; margin: 0 1px 0 0; text-align: center; }
+				.lastnewsitem { padding: 0 12px 0 0; margin: 0 0 2px 12px; background: url('/Shares/img/roundel.gif') no-repeat 98% 10px; line-height: 150%; text-align: justify; }
+					.lastnewsitem a { color: #333399; } 
+				.lastnewsiteminsulator { color: #993300; height: 18px; }
+					.lastnewsiteminsulatorhr { width: 135px; margin: 10px 7px 7px 0; text-align: right; float: right; height: 1px; overflow: hidden; background: #ddd; }
+					.lastnewsiteminsulatortm { float: left; width: 50px; margin: 0 0 0 5px; text-align: left; font: normal 10px Verdana; }
+
+			.selectedimage { border-top: solid 1px #c5c7c6; width: 204px; margin: 0 1px 0 0; text-align: center; padding: 15px 0 15px 0; background: #707477; }
+			
+			.toptype { width: 205px; text-align: right; margin: 0; }
+				.toptypepic { float: right; text-align: center; width: 66px; }
+					.toptypepic img { width: 54px; border: 1px solid #FFD082; }
+				.toptypeinfo { float: left; text-align: right; width: 130px; margin: 0 0 0 7px; }
+				.toptypeinfoblock { float: right; text-align: right; margin: 0 5px 0 7px; }
+				.toptypeclear { border-bottom: solid 1px #e5e5e5; clear: both; height: 1px; overflow: hidden; margin: 0 5px 7px 5px; padding: 7px 0 0 0; }
+
+			.pagetitle { text-align: center; width: 100%; padding: 3px 0; color: #a70112; font: bold 16px Arial, "Times New Roman", Times, Tahoma; border-bottom: solid 1px #ccc; }
+			.ctgnewsmainpane { clear: both; padding: 3px 20px 0 14px; text-align: right; }
+			
+		.ctgimpnews { background: #fff; height: 193px; padding: 0 14px; margin: 14px 21px 3px 19px; border: solid 2px #dde6e5; }
+			.ctgimpnewsinfo { float: left; width: 270px; padding: 0; margin: 20px 0 0 0; }
+				.ctgimpnewsinfotitle { font: bold 18px "Times News Roman",Times,Arial,Tahoma,sans-serif; text-align: right; }
+				.ctgnewsrotitr { font: normal 12px Arial; text-align: left; }
+				.ctgimpnewsbtmhr { margin: 0 0 7px 340px; background: #ddd; text-align: center; height: 1px; overflow: hidden; }
+			.ctgimpnewspic { float: right; margin: 20px 0 0 0; }
+				.ctgimpnewspic img { width: 250px; height: 150px; border: 1px solid #FFD082; }
+			.ctgnewslead { text-align: justify; margin: 3px 0; font: normal 12px Tahoma; }
+			
+			.ctgtopnews { padding: 20px 0 0 0; overflow: hidden; margin: 5px 0; width: 271px; float: right; text-align: right; background: #fff url('/Shares/img/ctgtoptitle.gif') no-repeat top; }
+				.ctgtopnewsitem { border: solid 2px #dde6e5; padding: 5px; }
+					.ctgtopnewsinfotitle { font: bold 15px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+					.ctgtopnewspic { width: 80px; height: 93px; float: right; text-align: right; padding: 5px; }
+						.ctgtopnewspic img{ width: 75px; height: 92px; border: 1px solid #000; }
+					.ctgtopnewsclear { clear: both; }
+			
+			.nwshimpnewsinfo { float: right; width: 300px; padding: 0; margin: 20px 0 0 0; }
+			.nwshimpnewspic { float: left; margin: 20px 0 0 0; }
+				.nwshimpnewspic img { width: 250px; height: 150px; border: 1px solid #FFD082; }
+			
+			.clear{ clear: both; text-align: center; padding: 7px 0; }
+			.ctgtopnewsbtmhr { margin: 0 120px; background: #ddd; text-align: center; height: 1px; overflow: hidden; }
+			.ctgnewsinfo { padding: 0 0 0 14px; }
+			.ctgnewspic { float: right; text-align: right; margin: 0 0 15px 7px; }
+					.ctgnewspic img { width: 54px; height: 66px; border: 1px solid #FFD082; margin: 0 0 20px 0; }
+				.ctgdownline, .lastctgdownline { clear: both; text-align: left; border-bottom: solid 1px #ccc; 
+								margin: 0 300px 0 7px; padding: 2px 0 2px 7px; direction: ltr; font: normal 11px Verdana; }
+				.lastctgdownline { color: #f00;}
+			
+			.lasttopnews1 { text-align: left; direction: rtl; padding: 0 5px 0 10px; }
+				.lasttopnews1 img { float: left; margin: 3px 7px 0 0; width: 54px; border: 1px solid #FFD082; }
+			.lasttopclear { clear: both; height: 1px; overflow: hidden; margin: 0 5px 5px 5px; padding: 5px 0 0 0; }
+			
+			.titleofnewspane { float: left; text-align: right; width: 820px; margin: 0 0 -30000px 0; padding: 0 0 30000px 0; overflow: hidden;  }
+				.oddlistitem, .evenlistitem { height: 20px; padding: 5px 7px; }
+				.oddlistitem { background: #dFe7e7; }
+					.titleoflistitem { float: right; background: url('/Shares/img/roundel.gif') no-repeat right; padding: 0 12px 0 0; }
+					.titleoflistitem, .titleoflistitem a { font: bold 16px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+						.timeoflistitem, .lastimoflistitem { float: left; text-align: left; width: 150px; padding: 2px 0 2px 7px; direction: ltr; font: normal 11px Verdana; }
+						.lastimoflistitem { color: #f00; }
+			
+			.paging { clear: both; font: bold 11px Tahoma; color: #ff8822; text-align: center; padding: 20px 20px; }
+				.paging a { font: normal 11px Tahoma; }
+				
+			
+			.aboutuspane { background: #ccc; padding: 0px 100px 0px 100px; margin: 2px 0 0 0; float: left; width: 630px; }
+				.aboutustextpane { background: #EFF7F7; text-align: center; width: 630px; }
+			
+			
+				.imgrepdatetime { width: 114px; float: right; padding: 5px 0; text-align: left; direction: ltr; }
+				.imgreptitle { width: 540px; padding: 5px 30px 5px 0; float: right; text-align: center; font: bold 15px "Times New Roman", Arial, Tahoma; color: #000080; }
+				.imgreprotitr { width: 110px; float: left; text-align: left; font-size: 11px; padding: 5px 0 5px 30px; }
+				.imgrepclear { clear: both; }
+			.imgreppane { float: left; text-align: right; background: #eee; width: 830px; margin: 2px 0 -30000px 0; padding: 0 0 30000px 0; overflow: hidden;  }
+				.imgrepmainpane { padding: 20px 40px 0 0; }
+					.imgrepitemspane { padding: 15px 17px; width: 240px; height: 320px; float: right; }
+						.imgrepitems { width: 240px; height: 320px; border: dashed 1px #ccc; text-align: center; }
+						.imgrepitempic { background: #ccc; line-height: 198px; height: 200px; margin: 2px 2px 2px 2px; text-align: center; }
+							.imgrepitempic img { vertical-align: middle; border: solid 1px #FFD082; }
+						.imgrepiteminfo { background: #dddfde; height: 55px; margin: 2px; text-align: center; }
+			
+			.plargbody { background: #ccc; }
+			.plargpane { width: 780px; background: #c0c0c0; padding: 5px 0; }
+				.plargpicsindex { border: solid 2px #fff; margin: 3px 14px; padding: 3px 0 0 0; }
+					.plargpaging { float: left; width: 708px; text-align: center; color: #fff; }
+					.plargnextpic, .plargprvspic { font: normal 18px "Times News Roman",Times,Arial,Tahoma,sans-serif; color: #eee; width: 20px; }
+					.plargnextpic { float: left; } .plargprvspic { float: right; }
+				.plargclear { clear: both; }
+				.plargpicpane { text-align: center; margin: 7px 14px; }
+					.plargpicpane img { border: solid 1px #000; }
+				.plardescpane { text-align: center; padding: 7px 0; margin: 0 14px; border: solid 1px #fff; }
+			
+			
+			
+			.nwspicimp { margin: 14px 0 0 0; }
+				.nwspicimpinfo { float: right; width: 195px; padding: 7px 14px 0 0; }
+				.nwspicimpnewspic { float: left; padding: 0 0 7px 18px; }
+					.nwspicimpnewspic img { width: 375px; height: 250px; border: 1px solid #FFD082; }
+				.nwspicimpdownline { clear: both; height: 2px; overflow: hidden; margin: 0 23px 25px 0; }
+					.nwspicimpdownline div { width: 195px; border-top: solid 1px #ccc; }
+			
+			
+			
+			
+			.nwspiccentercol { float: right; text-align: right; background: #ddd; width: 617px; margin: 2px 0 -30000px 0; padding: 0 0 30000px 0; }
+				.nwspicitemspane { padding: 5px 25px 5px 20px; width: 160px; height: 250px; float: right; }
+					.nwspicitems { width: 160px; height: 207px; text-align: center; }
+					.nwspicitempic { background: #ccc; height: 156px; text-align: center; background: url('/Shares/img/tdbg.gif') no-repeat; }
+						.nwspicitempic img { border: 1px solid #fff; }
+					.nwspiciteminfo { height: 49px; width: 160px; margin-top: 2px; text-align: center; background: url('/Shares/img/tdbg2.gif') no-repeat; font: normal 9px Tahoma; }
+			
+			.nwspicleftcolumn { float: left; text-align: center; border-right: solid 2px #fff; width: 212px; font-weight: bold; background: #dddfde; margin: 2px 0 -30000px 0; padding: 2px 0 30000px 0; }
+				.nwspictopnews { width: 200px; margin: 30px 5px; }
+					.nwspictopnewsmain { height: 70px; background: #d6dcdc; }
+						.nwspictopnewstitle { float: right; width: 134px; text-align: right; padding: 2px; }
+							.nwspictopnewstitle a { font: bold 12px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+						.nwspictopnewspic { float: left; width: 55px; text-align: left; }
+							.nwspictopnewspic img { width: 54px; height: 66px; border: 1px solid #fff; }
+					.nwspictopnewsinfo { clear: both; height: 20px; background: #d3d5d4; margin: 2px 0; }
+						.nwspictopnewsrt { float: right; width: 142px; font: normal 11px Tahoma; padding: 3px 2px 0 0; }
+						.nwspictopnewsdt { float: left; width: 54px; font: normal 11px Verdana; padding: 3px 0 0 2px; direction: ltr; }
+			
+			
+			
+			.picdescpane { text-align: center; padding: 3px 5px 5px 5px; margin: 10px; border: solid 1px #fff; font-size: 12px; }
+			
+			
+			.picsmainpane { float: left; text-align: right; width: 830px; background: #ddd; margin: 2px 0 -30000px 0; padding: 0 0 30000px 0; overflow: hidden;  }
+			.picsrighttoppic { float: right; width: 620px; }
+			.picsothertoppic { float: left; width: 158px; margin: 15px 20px 0 26px; }
+				.picsplaypane { text-align: center; background: #fff; padding: 3px 0 0 0; }
+				.picsothertoppicpane { height: 158px; width: 160px; background: #ccc; margin: 2px 0 0 0; }
+				.picsothertoptxtpane { height: 65px; background: #ccc; margin: 2px 0 0 0; text-align: center; padding: 5px; color: #903; }
+			.picsitemspane { padding: 0px 27px 10px 17px; width: 160px; height: 250px; float: right; }
+			.picspaging { clear: both; font: bold 11px Tahoma; color: #ff8822; text-align: center; padding: 20px 20px; }
+			
+			.rssdesc { color: #000080; text-align: right; font: bold 12px Tahoma; margin: 40px 50px; }
+			.rsslinksodd a:link, .rsslinkseven a:link, .rsslinksodd a:visited, .rsslinkseven a:visited { font: bold 12px Tahoma; color: #336A6A; }
+			.rsslinksodd, .rsslinkseven { text-align: right; height: 28px; margin: 2px 50px; }
+			.rsslinksodd { background: #DEEFEF; }
+			
+			.nwstxtctglink { float: right; width: 300px; padding: 0 5px 0 0; }
+			.nwstxtdt { float: right; text-align: right; width: 160px; color: #000; font-size: 12px; direction: ltr; }
+			.nwstxtnn { float: left; width: 120px; color: #000; font-size: 12px; }
+			.nwstxtmainpane { padding: 0 30px; }
+				.nwstxtlinkicons { text-align: left; padding: 5px 0; }
+			.nwstxttoppane { margin: 0; }
+				.nwstxtnewsinfo { float: right; width: 280px; padding: 0; }
+					.nwstxtrotitr { font: normal 13px Arial; color: #000080; }
+					.nwstxtinfotitle { font: bold 21px "Times News Roman",Times,Arial,Tahoma,sans-serif; color: #000080; line-height: 30px; }
+					.nwstxtlead { margin: 3px 0; font: bold 15px "Times News Roman",Times,Arial,Tahoma,sans-serif; color: #000080; }
+			.nwstxttext { clear: both; text-align: justify; padding: 0 0; font: normal 13px Tahoma; }
+			.nwstxttablepane { width: 100%; overflow: hidden; }
+			.nwstxtevenrow, .nwstxtoddrow { margin: 2px 0 0 0; padding: 0 0 2px 0; height: 22px; }
+				.nwstxtevenrow a, .nwstxtoddrow a { font: bold 12px "Times News Roman",Times,Arial,Tahoma,sans-serif; color:#2549b0; }
+				.nwstxtevenrow { background: #ddd; }
+					.relnewstitle { float: right; width: 400px; padding: 0; }
+						.relnewstitle img { height: 30px; }
+					.relnewsdt { color:#b95e01; font: normal 11px Verdana; float: left; width: 110px; direction: ltr; padding: 4px 0; }
+			.reltitle { background: #ccc; padding: 3px 7px; clear: both; color: #f50; }
+			.relatedimage { text-align: center; margin: 7px 0; }
+			
+			.nwstxtpic { float: left; }
+					.nwstxttoppic{ width: 250px; height: 150px; border: 1px solid #FFD082; }
+			.multimediaicon { height: 25px; border: none 0px; }
+			
+			.mediarotitr { font: normal 12px Arial; color: #000080; }
+			.mediatitle { font: bold 16px "Times News Roman",Times,Arial,Tahoma,sans-serif; color: #000080; }
+			
+			.printbody { background: #fff; margin: 0; padding: 0; }
+			.printmainpane { text-align: center; width: 650px; }
+			
+					.printlogo { float: right; width: 200px; text-align: right; }
+					.headinfo { float: left; width: 400px; text-align: left; padding: 5px 0 0 0; font: bold 11px Tahoma; }
+						.printdt { direction: ltr; text-align: left; font: bold 11px Tahoma; padding: 5px 0 0 0; }
+
+				.printtextpane { clear: both; padding: 20px 30px 40px 30px; border: dotted 2px #ccc; }
+					.printtextpane .nwstxtrotitr { color: #006; }
+					.printtextpane .nwstxtinfotitle { font: bold 20px "Times News Roman",Times,Arial,Tahoma,sans-serif; color: #006; padding: 10px 0; }
+					.printtextpane .nwstxtlead { font: bold 15px Times,Arial,"Times News Roman",Tahoma,sans-serif; color: #000; }
+				.printcopyright { text-align: center; direction: ltr; background: #ddd; padding: 2px 0; font: normal 11px Verdana; }
+			
+			
+			
+			.medianewsmainpane { padding: 1px 14px 0 7px; text-align: left; }
+			.mediaimpnews { background: #e0e1e3; margin: 0 10px 0 10px; }
+				.mediaimpnewsinfo { float: right; width: 250px; padding: 0; min-height: 152px; margin: 10px 7px 10px 0; }
+				.mediaimppic { float: left; padding: 18px 18px; background: #d3d7d8; }
+					.mediaimppic div { width: 250px; height: 150px; border: 1px solid #000; }
+						.mediaimppic img { margin: 100px 0 0 0; }
+				.impdownline { clear: both; height: 2px; overflow: hidden; margin: 15px 2px 25px 0; }
+					.impdownline div { width: 260px; border-top: solid 2px #ddd; }
+				.medianewsinfotitle { font: bold 16px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+				.medianewslead { font-size: 12px; margin: 0; text-align: justify; }
+				.mediaclear { clear: both; height: 1px; overflow: hidden;}
+			
+			
+			.mediatopnews { padding: 0; clear: both; margin: 10px 10px 0 10px; }
+				.mediasndtopnews, .mediaflmtopnews { width: 300px; border: solid 1px #fe906d; vertical-align: top; }
+					.mediasndtopnews { background: #fff url('/shares/img/topSoundTitle.gif') no-repeat top left; }
+					.mediaflmtopnews { background: #fff url('/shares/img/topVideoTitle.gif') no-repeat top left; }
+				.mediatopnewspic { float: right; height: 100px; width: 75px; margin: 5px 7px 0 7px; }
+					.mediatopnewspic img { width: 75px; height: 92px; border: 1px solid #000; }
+
+					.mediatopnews2 { float: right; } .mediatopnews1 { float: left; }
+					.mediainfotitle { font: bold 14px "Times News Roman",Times,Arial,Tahoma,sans-serif; }
+					.mediatopnewsinfo { font: normal 11px Tahoma; line-height: 140%; margin: 23px 7px 7px 7px; text-align: justify; direction: rtl; }
+						.mediatopnewsinfo a { font-family: Times New Roman; font-size: 14px; }
+					
+				.medialastnews { clear: both; margin: 15px 10px 0 12px; }
+					.medialastnews a { font-family: Times New Roman; font-size: 16px; }
+					.medialastnews p { padding: 0 85px 0 3px; text-align: justify; }
+					.medialastnewspic { float: right; height: 100px; width: 75px; }
+						.medialastnewspic img { width: 75px; height: 92px; border: 1px solid #000; }
+						
+						
+			.medialastnewsitem { padding: 0 12px 0 3px; margin: 14px 0 7px 0; background: url('/Shares/img/roundel.gif') no-repeat 98% 7px; line-height: 120%; text-align: justify; }
+					.medialastnewsitem a { color: #333399; } 
+						
+						

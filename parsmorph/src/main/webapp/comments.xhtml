@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<body>
+<ui:composition>
+
+    <h:form>
+        <p:fieldset legend="Comment" toggleable="true" toggleSpeed="500" collapsed="true">
+            <p:growl id="messages" showDetail="true"/>
+            <h:outputLabel for="name" value="Name (optional)"/>
+            <p:inputText id="name" name="name" value="#{controllerBean.name}" size="30" />
+            <h:outputLabel for="email" value="Email (optional)"/>
+            <p:inputText id="email" name="email" value="#{controllerBean.email}" size="30" />
+            <h:outputLabel for="comment" value="Your Comments *"/>
+            <p:inputTextarea id="comment" value="#{controllerBean.comment}" rows="5" cols="5" style="resize: none;" required="true"/>
+
+            <p:captcha label="Srcurity Check" theme="white"/>
+            <p:commandButton value="Comment" action="#{controllerBean.handleComments}" update=":form:messages" ajax="false"
+                             actionListener="#{captchaBean.submit}"/>
+        </p:fieldset>
+    </h:form>
+
+    <h:form>
+        <p:fieldset legend="Comments (#{commentBean.totalComments})" toggleable="true" toggleSpeed="500"
+                    collapsed="true">
+            <p:dataTable id="commentTable" widgetVar="commentTable"
+                         value="#{commentBean.lastComments}" var="comment"
+                         paginator="true" rows="10"
+                         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         rowsPerPageTemplate="5,10,15"
+                         rowKey="#{comment.id}">
+                <f:facet name="header">
+                    <p:outputPanel>
+                        <h:outputText value="Search in All Fields:"/>
+                        <p:inputText id="globalFilter" onkeyup="commentTable.filter()" style="width:150px"/>
+                    </p:outputPanel>
+                </f:facet>
+
+                <p:column filterBy="#{comment.name}" filterMatchMode="contains">
+                    <f:facet name="header">
+                        Name
+                    </f:facet>
+                    <h:outputText value="#{comment.name}"/>
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        Date
+                    </f:facet>
+                    <h:outputText value="#{comment.date}"/>
+                </p:column>
+
+                <p:column filterBy="#{comment.body}" filterMatchMode="contains" style="direction: rtl;">
+                    <f:facet name="header">
+                        Comment
+                    </f:facet>
+                    <h:outputText value="#{comment.body}"/>
+                </p:column>
+
+            </p:dataTable>
+        </p:fieldset>
+    </h:form>
+
+</ui:composition>
+</body>
+</html>
+

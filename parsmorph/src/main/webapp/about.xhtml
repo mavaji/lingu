@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2012 Vahid Mavaji
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<body>
+<ui:composition>
+
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="10">
+            <b>Pars Morph</b> is a rule-based Persian morphological analysis system, which analyzes the internal structure of word in Persian and determines the grammatical category and function of the word parts. Being in link with a lexicon covering about 45000 lexemes and based on morpho-logical rules in Persian, it can analyze the structure of complex lexemes and their possible inflected forms and even out-of-lexicon words.
+        </h:panelGrid>
+
+        <p:tabView value="#{authorBean.authors}" var="author">
+            <p:tab title="#{author.name}">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:graphicImage value="/images/#{author.image}"/>
+
+                    <h:outputText value="#{author.description}"/>
+                    <h:outputLink value="#{author.url}">
+                        <h:outputText value="Personal Page"/>
+                    </h:outputLink>
+                </h:panelGrid>
+            </p:tab>
+        </p:tabView>
+    </h:form>
+</ui:composition>
+</body>
+</html>
+
